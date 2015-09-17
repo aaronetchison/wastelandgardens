@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>Wasteland Gardens - Home</title>
+
+<link rel="stylesheet" href="stylesheets/custom-theme/jquery-ui-1.8.16.custom.css"><!-- load jQuery UI CSS  -->	
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Days+One"><!-- load Google Fonts  -->
+<link rel="stylesheet" href="stylesheets/global.css"><!-- load main CSS  -->
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script><!--  load jQuery -->
+<script src="js/jquery.cycle.all.min.js"></script> <!-- load jQuery cycle plug-in  -->
+<script src="js/jquery-ui-1.8.16.custom.min.js"></script><!-- load jQueyr UI  -->
+
+<script type="text/javascript">
+$(document).ready(function()
+{
+		//create slideshow cycle plug-in
+		$('#slideshowHome').cycle(
+		{
+      fx: 'uncover',
+			speed: 1000,
+			timeout: 8000,
+			pause: 1
+		});
+});//end document ready
+</script>
+
+</head>
+<body>
+
+<div class="container">
+	<header class="sixteen columns"><!-- begin header -->
+		<a class="logo" href="index.html"><img src="images/logo.png" width="324" height="94" alt="Logo" /></a>
+		<nav>
+	    <ul>
+				<li><a href="index.html">Home</a></li>
+	    	<li><a href="music.html">Music</a></li>
+	    	<li><a href="gallery.html">Galleries</a></li>
+	    	<li><a href="blog.html">Blog</a></li>
+			</ul>
+		</nav>
+	</header><!-- end header -->
+</div>
+
+
+<div class="container">
+	<div class="sixteen columns" id="slideshowHome"><!-- begin slideshow container -->
+    <div>
+      	<img src="images/homeSlideshow1.jpg" alt="Slideshow 1"/>
+    </div>
+    <div>
+     	<img src="images/homeSlideshow2.jpg" alt="Slideshow 2"/>
+    </div>
+    <div>
+      	<img src="images/homeSlideshow3.jpg" alt="Slideshow 3"/>
+    </div>
+	</div>
+</div>
+
+<div class="container">
+	<div class="one-third column module"><!-- begin left box -->
+		<h1>Music</h1>
+		<p>The heart of Wasteland Gardens is the music. It provides the beat from which everything else flows.</p>
+		<p>The type of music Wasteland Gardens makes is very hard to pin down because it varies dramatically, and includes alternative rock, electronica, trance, drum and bass, hip-hop, blues, reggae and world music.</p>
+		<p>Check out the <a href="music.html">Music</a> page and get a taste for yourself.</p>
+	</div><!-- end left box -->
+	      
+	<div class="one-third column module"><!-- begin center box -->
+		<h1>Art</h1>
+		<p>All of the art that is created by Wasteland Gardens is rooted in one particular song. It is meant to provide some visuals to accompany the audio.</p>
+		<p>The type of art Wasteland Gardens produces includes painting, photography, sculpture, digital design and about any other way you can create art.</p>
+		<p>Check out the <a href="gallery.html">Galleries</a> page to see more.</p>
+	</div><!-- end center box -->
+	       
+	<div class="one-third column module"><!-- box right box -->
+		<h1>Blog</h1>
+		<p>One of the primary purposes of Wasteland Gardens is to get people to think about music, art and the world around them.</p>
+		<p>A picture or song can be worth a thousand words, but sometimes they can’t stand alone.</p>
+		<p>Check out the <a href="blog.html">Blog</a> page to find out more of what Wasteland Gardens has to say about their art or anything else that is on their mind.</p>
+	</div><!-- end right box -->
+</div>
+
+
+<div class="container">
+	<footer class="sixteen columns"><!-- begin footer -->
+		<nav>
+			<ul>
+				<li><a href="termsofuse.html"><span class="nospace">Terms of Use</span></a></li>
+				<li><a href="aboutus.html"><span class="nospace">About Us</span></a></li>
+				<li><a href="contactus.html"><span class="nospace">Contact Us</span></a></li>
+			</ul>
+		</nav>
+		<br />
+		<p><span class="nospace">&copy; 2011 Wasteland Gardens</span></p>
+	</footer><!-- end footer -->
+</div>
+
+  
+</body>
+</html>

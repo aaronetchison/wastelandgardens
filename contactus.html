@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>Wasteland Gardens - Contact</title>
+
+<link rel="stylesheet" href="stylesheets/custom-theme/jquery-ui-1.8.16.custom.css"><!-- load jQuery UI CSS  -->	
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Days+One"><!-- load Google Fonts  -->
+<link rel="stylesheet" href="stylesheets/global.css"><!-- load main CSS  -->
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script><!--  load jQuery -->
+<script src="js/jquery.validate.min.js"></script><!-- load jQuery validate plug-in -->
+<script src="js/jquery-ui-1.8.16.custom.min.js"></script><!-- load jQuery UI -->
+
+<script type="text/javascript">
+$(document).ready(function()
+{
+//add the validation plug-in to the form
+	$('#contactUs').validate(
+	{
+		rules:
+		{
+			name: 'required',
+			email: {required:true, email:true},
+			dob: 'date',
+			comments: {required:true, rangelength:[10,250]}
+			
+		},//end rules
+		
+		messages:
+		{
+			name:
+			{
+				required: "Please enter your name."
+			},//end name messages
+			
+			email:
+			{
+				required: "Please enter an email address.",
+				email: "Please enter an email address in the proper format."
+			},//end email messages
+
+			dob:
+			{
+				date: "Please enter a date in the format of 01/01/2001."
+			},//end dob messages
+			
+			comments:
+			{
+				required: "Please enter a question or comment using 10 to 250 characters."
+			}//end comments messages
+		}//end messages
+	}); //end validate
+
+//change the border style of the field when focus
+	$(':input').focus(function() 
+	{
+		$(this).addClass('inputFocus');                    
+    });
+	
+	//change the border style of the field when blur
+	$(':input').blur(function() 
+	{
+		$(this).removeClass('inputFocus');                    
+    });
+
+//set the focus to the first name when the page loads	
+	$('#name').focus();
+	
+//add datepicker to the date field
+	$('#dob').datepicker(
+	{
+		changeMonth: true,
+		changeYear: true,
+		yearRange: '1930:2011',
+	});
+
+//disable the specific like field when the page loads  
+	$('#specificLike').attr('disabled',true);
+	
+//add class to specific like field when page loads
+	$('#specificLike').addClass('noInput');
+	
+//use change to disable and enable specific like field if something is selected
+   	$('#siteLike').change(function() 
+	{
+    	if($(this).val() == '')
+		{
+        	$('#specificLike').attr('disabled', true);
+			$('#specificLike').addClass('noInput');
+     	} 
+		else if($(this).val() == 'Music') 
+		{
+         	$('#specificLike').attr('disabled', false);
+			$('#specificLike').removeClass('noInput');
+		} 
+		else if($(this).val() == 'Art') 
+		{
+			$('#specificLike').attr('disabled', false);
+			$('#specificLike').removeClass('noInput');
+      	} 
+		else 
+		{
+         	$('#specificLike').attr('disabled', false);
+			$('#specificLike').removeClass('noInput');
+      	}
+	});//end change disable enable
+     
+//hide other field when the page is loaded
+	$('#other').hide();
+	//use change to hide and show other field based on refer selection
+   	$('#refer').change(function() 
+	{
+    	if($(this).val() == 'Other'){
+        	$('#other').show();
+  		} else {
+      		$('#other').hide();
+      	}
+ 	});//end change hide show other
+	
+//apply ajax to the form
+	$('#contactUs').submit(function() 
+	{
+		if($('#contactUs').valid()) 
+		{
+		var queryString = $('#contactUs').serialize();
+		$.post('email.php', queryString, processResults);
+		return false; //do not submit
+		}
+	});
+		
+	function processResults(data, textStatus, xhr) 
+	{
+		if(textStatus == 'success')
+		{
+			$('#success').text(data); //display success message
+			$('#success').fadeIn('slow');
+			$('#contactUs').hide(); //hide form
+		}
+	}
+	
+});//end document ready
+</script><!-- end contact form validate script -->
+
+</head>
+<body>
+
+<div class="container">
+	<header class="sixteen columns"><!-- begin header -->
+		<a class="logo" href="index.html"><img src="images/logo.png" width="324" height="94" alt="Logo" /></a>
+		<nav>
+	    <ul>
+				<li><a href="index.html">Home</a></li>
+	    	<li><a href="music.html">Music</a></li>
+	    	<li><a href="gallery.html">Galleries</a></li>
+	    	<li><a href="blog.html">Blog</a></li>
+			</ul>
+		</nav>
+	</header><!-- end header -->
+</div>
+
+<div class="container">
+	<div class="sixteen columns">
+		<div class="module"><!-- begin boxCenter container and form -->
+		<h1>Contact Us</h1>
+		   <form  name="contactUs" id="contactUs" method="post" action="email.php">
+		        <p>
+		            <label for="name" class="label1">Name:</label>
+		            <input type="text" name="name" id="name" class="required" />
+		        </p>
+		        <p>
+		        	<label for="email" class="label1">Email:</label>
+		            <input type="text" name="email" id="email" class="required email" />
+		        </p>
+		        <p>
+		        	<label for="dob" class="label1">Date of Birth:</label>
+		            <input type="text" name="dob" id="dob" />
+		        </p>
+		        <p>
+		             <label for="siteLike" class="label2">What do you like most about our site? </label>
+		             <br />
+		             <br />
+		             <select name="siteLike" id="siteLike">
+		              <option value="">Select One</option>
+		              <option value="Music">Music</option>
+		              <option value="Video">Video</option>
+		              <option value="Art">Art</option>
+		            </select>
+		        </p>
+		        
+		        <p>
+		        	<label for="specificLike" class="label2">Specifically, what is the best thing you have seen on our site? </label>
+		            <br />
+		            <br />
+		            <textarea rows="4" name="specificLike" id="specificLike"></textarea>
+		        </p>
+		        
+		        <p>
+		            <label for="refer" class="label2">Where did you hear about us? </label>
+		            <br />
+		            <br />
+		            <select name="refer" id="refer">
+		              <option value="">Select One</option>
+		              <option value="Google">Google</option>
+		              <option value="StumpleUpon">StumbleUpon</option>
+		              <option value="Facebook">Facebook</option>
+		              <option value="YouTube">YouTube</option>
+		              <option value="Other">Other</option>
+		            </select>
+		        </p>
+		        <p id="other">
+		            <label for="referOther" class="label2">Other: </label>
+		            <br />
+		            <br />
+		            <input type="text" name="referOther" id="referOther"/>
+		        </p>
+		        <p>
+		            <label for="comments" class="label2">What are your questions or comments? </label>
+		            <br />
+		            <br />
+		            <textarea name="comments" rows="4" id="comments" class="required"></textarea>
+		        </p>
+		        <p>
+		            <input type="submit" name="submit" id="submit" class="submitReset" value="Submit" />
+		            <input  type="reset" name="reset" id="reset" class="submitReset" value="Reset">
+		        </p>
+		    </form>
+
+			<div id="success"></div><!-- success div for PHP -->
+		</div><!-- end boxCenter container and form -->
+	</div>
+</div>
+
+
+
+<div class="container">
+	<footer class="sixteen columns"><!-- begin footer -->
+		<nav>
+			<ul>
+				<li><a href="termsofuse.html"><span class="nospace">Terms of Use</span></a></li>
+				<li><a href="aboutus.html"><span class="nospace">About Us</span></a></li>
+				<li><a href="contactus.html"><span class="nospace">Contact Us</span></a></li>
+			</ul>
+		</nav>
+		<br />
+		<p><span class="nospace">&copy; 2011 Wasteland Gardens</span></p>
+	</footer><!-- end footer -->
+</div>
+
+</body>
+</html>
