@@ -35,75 +35,109 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 		vertical-align: baseline; }
 
 body {
+	position: relative;
+	padding: 0;
+	margin: 0 auto;
 	background-color: #000;	
-	background-image: url(../images/bg2.jpg);
+	background-image: url(../images/bg-landingpage.jpg);
 	background-repeat: no-repeat;
 	background-position: top;
 	background-size: cover;
-	padding: 0;
-	margin: 0 auto;
+	font-size: 16px;
 }
 
 header {
 	width: 100%;
-	height: 100%;
-	margin-bottom: 10px;
-	background-image: url(../images/header4.png);
-	background-repeat: no-repeat;
-	background-size: contain;
+	min-height: 80px;
+	padding: 10px 20px;
+	background: linear-gradient(to bottom, black, rgba(0,0,0,0));
+}
+
+.logo {
+	float: left;
+}
+
+header nav {
+	float: right;
+	margin: 10px 20px;
+}
+
+nav ul li {
+	display: inline;
+	padding-left: 15px;
+	cursor: pointer;
+	text-align: center;
+}
+
+nav ul li a {
+	font-family: 'Bowlby One SC', Geneva, sans-serif;
+	font-size: 1.5em;
+	color: #FFFFFF;
+	font-weight: bold;
 	border: none;
 }
 
-.logo img {
-	margin: 20px 10px;
+nav ul li a:hover {
+	color: #56C529;
+	text-decoration: none;
 }
+
+
 
 footer {
 	width: 100%;
 	height: auto;
-	background-image: url(../images/footer.png);
-	background-repeat: no-repeat;
-	clear: both;
-	bottom: 0;
-	position: relative;
-	margin-top: 20px;
+	margin-top: 60px;
 	padding-top: 10px;
+}
+
+footer nav {
+	text-align: center;
+}
+
+.hero-copy {
+	padding: 10% 0;
+	text-align: center;
 }
 
 /* Type Styles */
 
 h1 {
-	font-family: 'Days One', Helvetica, sans-serif;
-	font-size: 24px;
+	font-family: 'Bowlby One SC', Helvetica, sans-serif;
+	font-size: 2em;
 	font-weight: bold;
-	color: #56C529;
+	color: #FFFFFF;
 	padding: 0;
 	margin: 0 0 10px 0;
 }
 
 h1 a{
-	font-family: 'Days One', Helvetica, sans-serif;
-	font-size: 24px;
-	font-weight: bold;
+	color: #FFFFFF;
+	padding: 0;
+	margin: 0 0 10px 0;
+	text-decoration: none;
+}
+
+h1 a:hover{
 	color: #56C529;
 	padding: 0;
 	margin: 0 0 10px 0;
 }
 
-h1 a:hover{
-	font-family: 'Days One', Helvetica, sans-serif;
-	font-size: 24px;
+h2 {
+	font-family: 'Bowlby One SC', Helvetica, sans-serif;
+	font-size: 8em;
 	font-weight: bold;
-	color: #993300;
+	color: #FFFFFF;
+	cursor:pointer;
 	padding: 0;
 	margin: 0 0 10px 0;
 }
 
-h2 {
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 18px;
-	font-weight: bold;
-	color: #993300;
+h3 {
+	font-family: 'Merriweather Sans', Helvetica, sans-serif;
+	font-size: 2.5em;
+	color: #FFFFFF;
 	cursor:pointer;
 	padding: 0;
 	margin: 0 0 10px 0;
@@ -177,33 +211,7 @@ footer a:hover {
 
 /* Link Styles */
 
-header nav {
-	float: right;
-	margin: 20px 20px;
-}
-
-footer nav {
-	text-align: center;
-}
-
-nav ul > li {
-	display: inline;
-	padding-left: 15px;
-	cursor: pointer;
-	text-align: center;
-}
-
-nav ul li a {
-	text-decoration: none;
-	font-family: 'Days One', Geneva, sans-serif;
-	font-size: 18px;
-	color: #56C529;
-	font-weight: bold;
-	border: none;
-}
-
-nav ul li a:hover {
-	color: #993300;
+a {
 	text-decoration: none;
 }
 
