@@ -19,6 +19,11 @@ Plugin Styles
 Media Queries
 */
 
+$white: #FFFFFF;
+$black: #000000;
+$green: #4EC872;
+$rust: #7B1C1B;
+
 /* General Styles */
 
 * {
@@ -35,16 +40,36 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 		vertical-align: baseline; }
 
 body {
-	position: relative;
 	padding: 0;
 	margin: 0 auto;
-	background-color: #000;	
-	background-image: url(../images/bg-landingpage.jpg);
-	background-repeat: no-repeat;
-	background-position: top;
-	background-size: cover;
 	font-size: 16px;
 }
+
+.bg-home {
+	position: relative;
+	overflow: hidden;
+}
+
+.bg-home::before {
+	content: ' ';
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-color: #000;
+	background: url('../images/bg-landingpage.jpg') no-repeat center center;
+	background-size: cover;
+	will-change: transform;
+	z-index: -1;
+}
+
+.hero-copy {
+	padding: 10% 0;
+	text-align: center;
+}
+
+/* Main Global Header */
 
 header {
 	width: 100%;
@@ -70,33 +95,26 @@ nav ul li {
 }
 
 nav ul li a {
+	margin-left: 10px;
 	font-family: 'Bowlby One SC', Geneva, sans-serif;
 	font-size: 1.5em;
-	color: #FFFFFF;
+	color: $white;
 	font-weight: bold;
 	border: none;
 }
 
 nav ul li a:hover {
-	color: #56C529;
+	color: $green;
 	text-decoration: none;
 }
 
-
+/* Main Global Footer */
 
 footer {
 	width: 100%;
 	height: auto;
 	margin-top: 60px;
 	padding-top: 10px;
-}
-
-footer nav {
-	text-align: center;
-}
-
-.hero-copy {
-	padding: 10% 0;
 	text-align: center;
 }
 
@@ -112,55 +130,74 @@ h1 {
 }
 
 h1 a{
-	color: #FFFFFF;
+	color: $white;
 	padding: 0;
 	margin: 0 0 10px 0;
 	text-decoration: none;
 }
 
 h1 a:hover{
-	color: #56C529;
-	padding: 0;
-	margin: 0 0 10px 0;
+	color: $green;
 }
 
 h2 {
+	margin: 0;
+	padding: 0;
 	font-family: 'Bowlby One SC', Helvetica, sans-serif;
 	font-size: 8em;
-	font-weight: bold;
-	color: #FFFFFF;
-	cursor:pointer;
-	padding: 0;
-	margin: 0 0 10px 0;
+	color: $rust;
 }
 
 h3 {
-	font-family: 'Merriweather Sans', Helvetica, sans-serif;
-	font-size: 2.5em;
-	color: #FFFFFF;
-	cursor:pointer;
-	padding: 0;
 	margin: 0 0 10px 0;
+	padding: 0;
+	font-family: 'Bowlby One SC', Helvetica, sans-serif;
+	font-size: 2.5em;
+	color: $white;
+}
+
+h4 {
+	margin: 0 0 10px 0;
+	padding: 0;
+	font-family: 'Arimo', Helvetica, sans-serif;
+	font-size: 2.5em;
+	color: $white;
+}
+
+h5 {
+	margin: 0;
+	padding: 0;
+	font-family: 'Bowlby One SC', Helvetica, sans-serif;
+	font-size: 2em;
+	color: $rust;
 }
 
 p {
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 16px;
-	color: #CCCCCC;
+	font-family: 'Arimo', Arial, Helvetica, sans-serif;
+	font-size: 1em;
+	color: $white;
 	padding: 0;
 	margin: 0 20px 10px 0;
 }
 
 p a{
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 16px;
-	color: #56C529;
-	padding: 0;
-	margin: 0 0 10px 0;
+	text-decoration: underline;
 }
 
 p a:hover{
-	color: #993300;
+	color: $green;
+}
+
+ol, ul {
+	margin-left: 20px;
+}
+
+li {
+	font-family: 'Arimo', Arial, Helvetica, sans-serif;
+	font-size: 1em;
+	color: $white;
+	padding: 0;
+	margin: 0 0 10px 0;
 }
 
 .byline {
@@ -171,43 +208,6 @@ p a:hover{
 	margin: 0 20px 10px 0;
 }
 
-footer p {
-	text-align: center;
-	color: #56C529;
-	word-spacing: 20px;
-	padding-top: 15px;
-}
-
-footer a {
-	text-decoration: none;
-	font-family: 'Days One', Geneva, sans-serif;
-	font-size: 18px;
-	color: #56C529;
-	font-weight: bold;
-}
-
-
-footer a:hover {
-	font-family: 'Days One', Geneva, sans-serif;
-	font-size: 18px;
-	color: #993300;
-	text-decoration: none;
-	font-weight: bold;
-	background-image: url(../images/linkbg.png);
-	background-position: center center;
-}
-
-.copyright {
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 13px;
-	color: #CCC;
-	text-align: center;
-	word-spacing: normal;
-}
-
-.nospace {
-	word-spacing: normal;	
-}
 
 /* Link Styles */
 
@@ -222,130 +222,34 @@ a {
 	padding: 10px;
 	background-color: #000;	
 	background-color: rgba(0,0,0,0.5);
-	border: 2px solid #993300;
-	border-radius: 1em 2em 1em 2em;
 }
 
-.boxCenter {
-	width:auto;
-	height:auto;
-	background-color: #000;
-	float: none;
-	margin-left: auto;
-	padding-top: 20px;
-	padding-left: 20px;
-	clear: left;
-	padding-bottom: 20px;
-	margin-right: auto;
-	border: 2px solid #993300;
-	border-radius: 1em 2em 1em 2em;
-}
-
-.boxTop {
-	width:auto;
-	height:180px;
-	background-color: #000;
-	float: none;
-	margin-left: auto;
-	margin-bottom: 20px;
-	padding-top: 20px;
-	padding-left: 20px;
-	clear: left;
-	padding-bottom: 20px;
-	margin-right: auto;
-	border: 2px solid #993300;
-	border-radius: 1em 2em 1em 2em;
-	/* for Firefox */	
-	-moz-border-radius: 1em 2em 1em 2em;
-}
-
-.smBoxLeft {
-	width:262px;
-	height:250px;
-	background-color: #000;
-	float: left;
-	margin-left: auto;
-	margin-bottom: 20px;
-	padding-top: 20px;
-	padding-left: 20px;
-	padding-right: 0;
-	padding-bottom: 20px;
-	margin-right: 20px;
-	border: 2px solid #993300;
-	border-radius: 1em 2em 1em 2em;
-	/* for Firefox */	
-	-moz-border-radius: 1em 2em 1em 2em;
-}
-
-.smBoxCenter {
-	width:262px;
-	height:250px;
-	background-color: #000;
-	float: left;
-	margin-left: auto;
-	margin-bottom: 20px;
-	padding-top: 20px;
-	padding-left: 20px;
-	padding-right: 0;
-	padding-bottom: 20px;
-	margin-right: 20px;
-	border: 2px solid #993300;
-	border-radius: 1em 2em 1em 2em;
-	/* for Firefox */	
-	-moz-border-radius: 1em 2em 1em 2em;
-}
-
-.smBoxRight {
-	width:262px;
-	height:250px;
-	background-color: #000;
-	float: left;
-	margin-left: auto;
-	margin-bottom: 20px;
-	padding-top: 20px;
-	padding-left: 20px;
-	padding-right: 0;
-	padding-bottom: 20px;
-	margin-right: auto;
-	border: 2px solid #993300;
-	border-radius: 1em 2em 1em 2em;
-	/* for Firefox */	
-	-moz-border-radius: 1em 2em 1em 2em;
-}
 
 .faqBox h2 {
 	margin-right: 10px;
 	margin-left: 10px;	
 }
 
-.faqImage {
+.faq-profile {
 	float: left;
-	height: 100px;
-	width: 400px;
+	height: auto;
+	width: 50%;
 	margin: 0;
 	padding: 0;
 }
-.faqImage img, .faqImage h2   {
+.faq-profile img, .faq-profile h3   {
 	float: left;
 	padding: 0;
 	margin-top: 0;
 	margin-right: 0;
 	margin-bottom: 0;
 	margin-left: 10px;
+	font-size: 1em;
 }
-.faqCopy {
+.faq-profile p {
 	float: left;
 	width: 250px;
 	margin-left: 10px;
-}
-
-.postBox {
-	background-color: #000;
-	padding-top: 20px;
-	padding-bottom: 20px;
-	border: 2px solid #993300;
-	border-radius: 1em 2em 1em 2em;
-	padding-left: 20px;
 }
 
 /* Forms */
@@ -428,7 +332,6 @@ input.error {
 
 /**Lightbox Gallery**/
 #gallery1, #gallery2 {
-	background-color: #000;
 	height: auto;
 	width: auto;
 	padding-top: 20px;
@@ -461,7 +364,6 @@ input.error {
 
 
 #gallery1 ul img, #gallery2 ul img {
-	border: 5px solid #993300;
 	padding: 0;
 	margin-top: 0;
 	margin-right: 10px;
