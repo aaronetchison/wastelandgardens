@@ -341,14 +341,27 @@ input.error {
 
 
 /**Gallery**/
-.container.gallery .columns {
-	margin-left: 0;
-	margin-right: 0;
-}
+
 .container.gallery .four.columns {
-	width: 25%;
+	position: relative;
 	margin: 0;
 	padding: 0;
+	overflow: hidden;
+}
+
+.gallery-copy {
+	position: absolute;
+	bottom: 0;
+	height: 0;
+	width: 100%;
+	padding: 0;
+	background-color: rgba(0,0,0,0.5);
+	transition: all 1s ease;
+}
+
+.container.gallery .four.columns:hover .gallery-copy {
+	height: 100%;
+	padding: 10px;
 }
 
 /**Cycle Slideshow**/

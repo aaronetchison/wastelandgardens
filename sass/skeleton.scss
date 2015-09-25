@@ -36,6 +36,7 @@
     .container .two.columns                     { width: 10.41666666666667%; }
     .container .three.columns                   { width: 16.66666666666667%; }
     .container .four.columns                    { width: 22.91666666666667%; }
+    .container.gallery .four.columns            { width: 25%;                }
     .container .five.columns                    { width: 29.16666666666667%; }
     .container .six.columns                     { width: 35.41666666666667%; }
     .container .seven.columns                   { width: 41.66666666666667%; }
@@ -70,6 +71,7 @@
     .container .two.columns                     { width: 10.41666666666667%; }
     .container .three.columns                   { width: 16.66666666666667%; }
     .container .four.columns                    { width: 22.91666666666667%; }
+    .container.gallery .four.columns            { width: 25%;                }
     .container .five.columns                    { width: 29.16666666666667%; }
     .container .six.columns                     { width: 35.41666666666667%; }
     .container .seven.columns                   { width: 41.66666666666667%; }
@@ -92,9 +94,8 @@
 /*  #Mobile (Portrait)
 ================================================== */
 
-    /* Note: Design for a width of 320px */
 
-    @media only screen and (max-width: 767px) {
+    @media only screen and (min-width: 480px) and (max-width: 767px) {
         .container { width: 100%; }
         .container .columns,
         .container .column { margin: 0 0 20px 0; }
@@ -118,15 +119,14 @@
         .container .sixteen.columns,
         .container .one-third.column,
         .container .two-thirds.column  { width: 100%; }
+        .container.gallery .four.columns { width: 50% }
     }
 
 
 /* #Mobile (Landscape)
 ================================================== */
 
-    /* Note: Design for a width of 480px */
-
-    @media only screen and (min-width: 480px) and (max-width: 767px) {
+    @media only screen and (max-width: 480px) {
         .container { width: 100%; }
         .container .columns,
         .container .column { margin: 0 0 20px 0; }
@@ -136,6 +136,7 @@
         .container .two.columns,
         .container .three.columns,
         .container .four.columns,
+        .container.gallery .four.columns,
         .container .five.columns,
         .container .six.columns,
         .container .seven.columns,
