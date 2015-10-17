@@ -21,8 +21,14 @@ Media Queries
 
 $white: #FFFFFF;
 $black: #000000;
-$green: #4EC872;
-$rust: #7B1C1B;
+$light-green: #56C529;
+$green: #2C780D;
+$rust: #783313;
+$blue: #4046CF;
+$purple: #780973;
+$light-gray: #CCCCCC;
+$dark-gray: #666666;
+$blue-gray: #3F6677;
 
 /* General Styles */
 
@@ -51,7 +57,7 @@ body {
 }
 
 .bg-home::before {
-	content: ' ';
+	content: '';
 	position: fixed;
 	width: 100%;
 	height: 100%;
@@ -62,6 +68,12 @@ body {
 	background-size: cover;
 	will-change: transform;
 	z-index: -1;
+}
+
+.bg-site {
+	padding-bottom: 20px;
+	background-color: $white;
+	background: url('../images/concrete_seamless.png') repeat;
 }
 
 .hero-copy {
@@ -75,7 +87,6 @@ header {
 	width: 100%;
 	min-height: 80px;
 	padding: 10px 20px;
-	background: linear-gradient(to bottom, black, rgba(0,0,0,0));
 }
 
 .logo {
@@ -98,13 +109,13 @@ nav ul li a {
 	margin-left: 10px;
 	font-family: 'Bowlby One SC', Geneva, sans-serif;
 	font-size: 1.5em;
-	color: $white;
+	color: $light-gray;
 	font-weight: bold;
 	border: none;
 }
 
 nav ul li a:hover {
-	color: $green;
+	color: $dark-gray;
 	text-decoration: none;
 }
 
@@ -124,20 +135,20 @@ h1 {
 	font-family: 'Bowlby One SC', Helvetica, sans-serif;
 	font-size: 2em;
 	font-weight: bold;
-	color: #FFFFFF;
+	color: $light-gray;
 	padding: 0;
 	margin: 0 0 10px 0;
 }
 
 h1 a{
-	color: $white;
+	color: $light-gray;
 	padding: 0;
 	margin: 0 0 10px 0;
 	text-decoration: none;
 }
 
 h1 a:hover{
-	color: $green;
+	color: $dark-gray;
 }
 
 h2 {
@@ -145,7 +156,7 @@ h2 {
 	padding: 0;
 	font-family: 'Bowlby One SC', Helvetica, sans-serif;
 	font-size: 8em;
-	color: $rust;
+	color: $light-gray;
 }
 
 h3 {
@@ -153,7 +164,7 @@ h3 {
 	padding: 0;
 	font-family: 'Bowlby One SC', Helvetica, sans-serif;
 	font-size: 2.5em;
-	color: $white;
+	color: $light-gray;
 }
 
 h4 {
@@ -169,13 +180,13 @@ h5 {
 	padding: 0;
 	font-family: 'Bowlby One SC', Helvetica, sans-serif;
 	font-size: 2em;
-	color: $rust;
+	color: $light-gray;
 }
 
 p {
 	font-family: 'Arimo', Arial, Helvetica, sans-serif;
 	font-size: 1em;
-	color: $white;
+	color: $dark-gray;
 	padding: 0;
 	margin: 0 20px 10px 0;
 }
@@ -185,7 +196,7 @@ p a{
 }
 
 p a:hover{
-	color: $green;
+	color: $rust;
 }
 
 ol, ul {
@@ -230,8 +241,6 @@ img {
 .module {
 	margin-bottom: 10px;
 	padding: 10px;
-	background-color: #000;	
-	background-color: rgba(0,0,0,0.5);
 }
 
 
@@ -261,6 +270,33 @@ img {
 	width: 250px;
 	margin-left: 10px;
 }
+
+.module-audio {
+	width: 100%;
+	margin: 0 10px 10px 0;
+	padding: 0;
+	float: left;
+
+	img {
+		float: left;
+		width: 120px;
+		margin-right: 10px;
+	}
+
+	audio {
+		width: 100%;
+	}
+
+	p {
+	}
+
+}
+
+.parent-column {
+	margin: 0;
+	padding: 0;
+}
+
 
 /* Forms */
 .label1 {
