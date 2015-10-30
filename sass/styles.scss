@@ -72,9 +72,13 @@ body {
 }
 
 .bg-site {
+	width: 100%;
 	padding-bottom: 20px;
 	background-color: $white;
-	background: url('../images/concrete_seamless.png') repeat;
+	background:  url('../images/bg-vines.png'), url('../images/concrete_seamless.png');
+	background-repeat: no-repeat, repeat;
+	background-size: cover, auto;
+	background-position: top, top;
 }
 
 .hero-copy + .bg-site {
@@ -196,7 +200,7 @@ h2 {
 	padding: 0;
 	font-family: 'Bowlby One SC', Helvetica, sans-serif;
 	font-size: 8em;
-	color: $dark-gray;
+	color: $light-gray;
 }
 
 h3 {
@@ -204,7 +208,7 @@ h3 {
 	padding: 0;
 	font-family: 'Bowlby One SC', Helvetica, sans-serif;
 	font-size: 2.5em;
-	color: $medium-gray;
+	color: $light-gray;
 }
 
 h4 {
@@ -220,13 +224,13 @@ h5 {
 	padding: 0;
 	font-family: 'Bowlby One SC', Helvetica, sans-serif;
 	font-size: 2em;
-	color: $medium-gray;
+	color: $light-gray;
 }
 
 p {
 	font-family: 'Arimo', Arial, Helvetica, sans-serif;
 	font-size: 1em;
-	color: $dark-gray;
+	color: $light-gray;
 	padding: 0;
 	margin: 0 20px 10px 0;
 }
@@ -316,43 +320,7 @@ img {
 	padding: 0;
 }
 
-/* Audio Player */
 
-.module-audio {
-	margin:0;
-	padding: 0;
-
-	ul {
-		margin: 0;
-	}
-
-	li {
-		display: block;
-		clear: both;
-		height: 120px;
-		margin-bottom: 10px;
-		list-style-type: none;
-		background-color: rgba(0,0,0,0.1);
-	}
-
-	li:hover, li.current {
-		background-color: rgba(0,0,0,0.2);
-	}
-
-	img {
-		float: left;
-		width: 120px;
-		margin-right: 10px;
-	}
-
-	audio {
-		width: 100%;
-	}
-
-	p {
-	}
-
-}
 
 /* Forms */
 .label1 {
@@ -455,6 +423,57 @@ input.error {
 	height: 100%;
 	padding: 10px;
 }
+
+.gallery {
+
+	h5 {
+		color: $light-gray;
+	}
+
+	p {
+		color: $light-gray;
+	}
+}
+
+
+/* Audio Player */
+
+.module-audio {
+	margin:0;
+	padding: 0;
+
+	ul {
+		margin: 0;
+	}
+
+	li {
+		display: block;
+		clear: both;
+		height: 120px;
+		margin-bottom: 10px;
+		list-style-type: none;
+		background-color: rgba(0,0,0,0.1);
+	}
+
+	li:hover, li.current {
+		background-color: rgba(0,0,0,0.2);
+	}
+
+	img {
+		float: left;
+		width: 120px;
+		margin-right: 10px;
+	}
+
+	audio {
+		width: 100%;
+	}
+
+	p {
+	}
+
+}
+
 
 /**Cycle Slideshow**/
 
