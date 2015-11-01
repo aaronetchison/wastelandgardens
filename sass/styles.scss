@@ -24,12 +24,13 @@ $black: #000000;
 $light-green: #56C529;
 $green: #2C780D;
 $rust: #783313;
-$blue: #4046CF;
+$blue: #98B7C9;
 $purple: #780973;
 $light-gray: #fbfbfb;
 $medium-gray: #606060;
 $dark-gray: #333333;
 $blue-gray: #3F6677;
+$dark-tan: #B0A490;
 
 /* General Styles */
 
@@ -72,13 +73,24 @@ body {
 }
 
 .bg-site {
+	position: relative;
 	width: 100%;
 	padding-bottom: 20px;
 	background-color: $white;
-	background:  url('../images/bg-vines.png'), url('../images/concrete_seamless.png');
-	background-repeat: no-repeat, repeat;
-	background-size: cover, auto;
-	background-position: top, top;
+	background: url('../images/concrete_seamless.png');
+	background-repeat: repeat;
+}
+
+.bg-site .container {
+	z-index: 1;
+}
+
+.bg-site .bg-overlay {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	max-height: 720px;
 }
 
 .hero-copy + .bg-site {
@@ -87,19 +99,25 @@ body {
 
 .hero-header {
 	h1 a{
-		color: $light-gray;
+		color: $dark-tan;
+		transition: all .5s ease;
 	}
 
 	h1 a:hover{
-		color: $dark-gray;
+		color: $light-gray;
+		border-top: 5px solid $dark-tan;
+		border-bottom: 5px solid $dark-tan;
 	}
 
 	nav ul li a {
-		color: $light-gray;
+		color: $dark-tan;
+		transition: all .5s ease;
 	}
 
 	nav ul li a:hover {
-		color: $dark-gray;
+		color: $light-gray;
+		border-top: 5px solid $dark-tan;
+		border-bottom: 5px solid $dark-tan;
 	}
 }
 
@@ -110,11 +128,12 @@ body {
 
 	h2 {
 		color: $light-gray;
-		animation: delayed-fade 1s ease-in 0s 1 ; 
+		animation: delayed-fade 1s ease-in 0s 1; 
 	}
 
 	h4 {
-		animation: delayed-fade 2s ease-in 0s 1 ; 
+		color: $light-gray;
+		animation: delayed-fade 2s ease-in 0s 1; 
 	}
 }
 
@@ -124,6 +143,10 @@ body {
 	100% {opacity: 1;}
 }
 
+.container {
+	background: url('../images/concrete_seamless.png') repeat;
+	box-shadow: 4px 4px 4px $dark-tan;
+}
 
 /* Main Global Header */
 
@@ -131,10 +154,12 @@ header {
 	width: 100%;
 	min-height: 80px;
 	padding: 10px 20px;
+	background: url('../images/concrete_seamless.png') repeat;
 }
 
 .logo {
 	float: left;
+	margin-top: 6px;
 }
 
 header nav {
@@ -153,13 +178,13 @@ nav ul li a {
 	margin-left: 10px;
 	font-family: 'Bowlby One SC', Geneva, sans-serif;
 	font-size: 1.5em;
-	color: $medium-gray;
+	color: $dark-tan;
 	font-weight: bold;
 	border: none;
 }
 
 nav ul li a:hover {
-	color: $dark-gray;
+	color: $light-gray;
 	text-decoration: none;
 }
 
@@ -171,6 +196,7 @@ footer {
 	margin-top: 60px;
 	padding-top: 10px;
 	text-align: center;
+	z-index: 1;
 }
 
 /* Type Styles */
@@ -192,7 +218,7 @@ h1 a{
 }
 
 h1 a:hover{
-	color: $dark-gray;
+	color: $dark-tan;
 }
 
 h2 {
@@ -200,7 +226,7 @@ h2 {
 	padding: 0;
 	font-family: 'Bowlby One SC', Helvetica, sans-serif;
 	font-size: 8em;
-	color: $light-gray;
+	color: $dark-tan;
 }
 
 h3 {
@@ -208,7 +234,7 @@ h3 {
 	padding: 0;
 	font-family: 'Bowlby One SC', Helvetica, sans-serif;
 	font-size: 2.5em;
-	color: $light-gray;
+	color: $dark-tan;
 }
 
 h4 {
@@ -216,7 +242,7 @@ h4 {
 	padding: 0;
 	font-family: 'Arimo', Helvetica, sans-serif;
 	font-size: 2.5em;
-	color: $white;
+	color: $dark-tan;
 }
 
 h5 {
@@ -224,13 +250,13 @@ h5 {
 	padding: 0;
 	font-family: 'Bowlby One SC', Helvetica, sans-serif;
 	font-size: 2em;
-	color: $light-gray;
+	color: $dark-tan;
 }
 
 p {
 	font-family: 'Arimo', Arial, Helvetica, sans-serif;
 	font-size: 1em;
-	color: $light-gray;
+	color: $dark-gray;
 	padding: 0;
 	margin: 0 20px 10px 0;
 }
@@ -450,19 +476,22 @@ input.error {
 		display: block;
 		clear: both;
 		height: 120px;
-		margin-bottom: 10px;
+		margin-bottom: 20px;
+		border-bottom: 2px solid $dark-tan;
 		list-style-type: none;
-		background-color: rgba(0,0,0,0.1);
+		transition: all .5s ease;
 	}
 
 	li:hover, li.current {
-		background-color: rgba(0,0,0,0.2);
+		background: linear-gradient(to top, rgba(176,164,144,0), rgba(176,164,144,.5) );
+		box-shadow: 1px 1px 1px $dark-tan;
 	}
 
 	img {
 		float: left;
 		width: 120px;
 		margin-right: 10px;
+		padding: 10px;
 	}
 
 	audio {
