@@ -1,5 +1,15 @@
 jQuery(document).ready(function($) {
-var audio    = new Audio();
+
+/* Menu */
+  $('#nav-wrap').prepend('<div id="menu-icon"><h2 class="button">Menu</h2></div>');
+  
+  $("#menu-icon").on("click", function(){
+      $("#nav-menu").slideToggle();
+      $(this).toggleClass("active");
+  });
+
+/* Audio Player */
+  var audio    = new Audio();
     playlist = $('#playlist1');
     player = $('#player1');
 
@@ -10,12 +20,12 @@ var audio    = new Audio();
                   audio.play();
                });
        
-audio.controls = true;
-player.append(audio);
-});
+  audio.controls = true;
+  player.append(audio);
+  });
 
-jQuery(document).ready(function($) {
-var audio    = new Audio();
+  jQuery(document).ready(function($) {
+  var audio    = new Audio();
     playlist = $('#playlist2');
     player = $('#player2');
 
@@ -26,6 +36,9 @@ var audio    = new Audio();
                   audio.play();
                });
        
-audio.controls = true;
-player.append(audio);
+  audio.controls = true;
+  player.append(audio);
+
+
+
 });
