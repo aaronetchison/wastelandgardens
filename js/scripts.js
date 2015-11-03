@@ -22,22 +22,20 @@ jQuery(document).ready(function($) {
        
   audio.controls = true;
   player.append(audio);
-  });
 
-  jQuery(document).ready(function($) {
-  var audio    = new Audio();
-    playlist = $('#playlist2');
-    player = $('#player2');
+  var audio2    = new Audio();
+    playlist2 = $('#playlist2');
+    player2 = $('#player2');
 
-               playlist.on('click', 'li', function() {
-                  playlist.find('.current').removeClass('current');
+               playlist2.on('click', 'li', function() {
+                  playlist2.find('.current').removeClass('current');
                   $(this).addClass('current');
-                  audio.src = $(this).data('src');
-                  audio.play();
+                  audio2.src = $(this).data('src');
+                  audio2.play();
                });
        
-  audio.controls = true;
-  player.append(audio);
+  audio2.controls = true;
+  player2.append(audio2);
 
 
 

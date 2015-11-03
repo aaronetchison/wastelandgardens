@@ -81,18 +81,6 @@ body {
 	background-repeat: repeat;
 }
 
-.bg-site .container {
-	z-index: 1;
-}
-
-.bg-site .bg-overlay {
-	position: absolute;
-	right: 0;
-	bottom: 0;
-	width: 100%;
-	max-height: 720px;
-}
-
 .hero-copy + .bg-site {
 	padding: 20px 0;
 }
@@ -117,11 +105,6 @@ body {
 	0%   {opacity: 0;}
 	50%  {opacity: 0;}
 	100% {opacity: 1;}
-}
-
-.container {
-	background: url('../images/concrete_seamless.png') repeat;
-	box-shadow: 4px 4px 4px $dark-tan;
 }
 
 /* Main Global Header */
@@ -152,30 +135,30 @@ header {
 		float: right;
 		margin: 10px 20px;
 	}
+}
 
-	nav ul li {
-		display: inline;
-		padding-left: 15px;
-		cursor: pointer;
-		text-align: center;
-	}
+nav ul li {
+	display: inline;
+	padding-left: 15px;
+	cursor: pointer;
+	text-align: center;
+}
 
-	nav ul li a {
-		margin-left: 10px;
-		font-family: 'Bowlby One SC', Geneva, sans-serif;
-		font-size: 1.5em;
-		color: $dark-tan;
-		font-weight: bold;
-		border: none;
-		transition: all .5s ease;
-	}
+nav ul li a {
+	margin-left: 10px;
+	font-family: 'Bowlby One SC', Geneva, sans-serif;
+	font-size: 1.5em;
+	color: $dark-tan;
+	font-weight: bold;
+	border: none;
+	transition: all .5s ease;
+}
 
-	nav ul li a:hover {
-		color: $light-gray;
-		text-decoration: none;
-		border-top: 5px solid $dark-tan;
-		border-bottom: 5px solid $dark-tan;
-	}
+nav ul li a:hover {
+	color: $light-gray;
+	text-decoration: none;
+	border-top: 5px solid $dark-tan;
+	border-bottom: 5px solid $dark-tan;
 }
 
 #menu-icon {
@@ -422,8 +405,9 @@ input.error {
 
 /**Gallery**/
 
-.container.gallery .four.columns {
+.container.gallery .one-third.column {
 	position: relative;
+	max-height: 270px;
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
@@ -439,7 +423,7 @@ input.error {
 	transition: all 1s ease;
 }
 
-.container.gallery .four.columns:hover .gallery-copy {
+.container.gallery .one-third.column:hover .gallery-copy {
 	height: 100%;
 	padding: 10px;
 }
@@ -469,7 +453,7 @@ input.error {
 	li {
 		display: block;
 		clear: both;
-		height: 120px;
+		height: 108px;
 		margin-bottom: 20px;
 		border-bottom: 2px solid $dark-tan;
 		list-style-type: none;
@@ -483,7 +467,8 @@ input.error {
 
 	img {
 		float: left;
-		width: 120px;
+		width: 192px;
+		height: 108px;
 		margin-right: 10px;
 		padding: 10px;
 	}

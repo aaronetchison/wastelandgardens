@@ -50,7 +50,8 @@
     .container .fifteen.columns                 { width: 91.66666666666667%; }
     .container .sixteen.columns                 { width: 97.91666666666667%; }
 
-    .container .one-third.column                { width: 31.25%; }
+    .container .one-third.column                { width: 31.25%;             }
+    .container.gallery .one-third.column        { width: 33.33333333333333%; }
     .container .two-thirds.column               { width: 64.58333333333333%; }
 
 /* #Tablet (Portrait)
@@ -86,6 +87,7 @@
     .container .sixteen.columns                 { width: 97.91666666666667%; }
 
     .container .one-third.column                { width: 31.25%; }
+    .container.gallery .one-third.column        { width: 33.33333333333333%; }
     .container .two-thirds.column               { width: 64.58333333333333%; }
 
     }
@@ -118,8 +120,8 @@
         .container .fifteen.columns,
         .container .sixteen.columns,
         .container .one-third.column,
+        .container.gallery .one-third.column,
         .container .two-thirds.column  { width: 100%; }
-        .container.gallery .four.columns { width: 50% }
     }
 
 
@@ -150,6 +152,7 @@
         .container .fifteen.columns,
         .container .sixteen.columns,
         .container .one-third.column,
+        .container.gallery .one-third.column,
         .container .two-thirds.column { width: 100%; }
     }
 
