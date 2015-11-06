@@ -665,8 +665,8 @@
 		},
 		optionsVideo: {
 			size: {
-				width: "480px",
-				height: "270px",
+				width: "0",
+				height: "0",
 				cssClass: "jp-video-270p"
 			},
 			sizeFull: {

@@ -10,9 +10,6 @@
 <link href= "https://fonts.googleapis.com/css?family=Bowlby+One+SC|Arimo:400,400italic,700" rel="stylesheet" type="text/css">
 <link rel="stylesheet" href="stylesheets/global.css"><!-- load main CSS  -->
 
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script><!--  load jQuery -->
-<script src="js/jquery-ui-1.8.16.custom.min.js"></script><!-- load jQueyr UI  -->
-
 </head>
 <body>
 <div class="bg-home">
@@ -31,30 +28,66 @@
 		</nav>
 	</header><!-- end header -->
 
-	<div class="hero-copy">
-		<h2>Wasteland Gardens</h2>
-		<h4>Some information about this site.</h4>
+	<div class="hero">
+		<div class="hero-copy">
+			<h2>Wasteland Gardens</h2>
+			<h4>Some information about this site.</h4>
+		</div>
+		<div id="jp_container_N" class="jp-video jp-video-270p" role="application" aria-label="media player">
+			<div class="jp-type-playlist">
+				<div id="jquery_jplayer_N" class="jp-jplayer"></div>
+				<div class="jp-gui">
+					<div class="jp-interface">
+						<div class="jp-progress">
+							<div class="jp-seek-bar">
+								<div class="jp-play-bar"></div>
+							</div>
+						</div>
+						<div class="jp-current-time" role="timer" aria-label="time">&nbsp;</div>
+						<div class="jp-duration" role="timer" aria-label="duration">&nbsp;</div>
+						<div class="jp-controls-holder">
+							<div class="jp-controls">
+								<button class="jp-previous" role="button" tabindex="0">previous</button>
+								<button class="jp-play" role="button" tabindex="0">play</button>
+								<button class="jp-next" role="button" tabindex="0">next</button>
+								<button class="jp-stop" role="button" tabindex="0">stop</button>
+							</div>
+							<div class="jp-volume-controls">
+								<button class="jp-mute" role="button" tabindex="0">mute</button>
+								<button class="jp-volume-max" role="button" tabindex="0">max volume</button>
+								<div class="jp-volume-bar">
+									<div class="jp-volume-bar-value"></div>
+								</div>
+							</div>
+							<div class="jp-toggles">
+								<button class="jp-repeat" role="button" tabindex="0">repeat</button>
+								<button class="jp-shuffle" role="button" tabindex="0">shuffle</button>
+								<button class="jp-full-screen" role="button" tabindex="0">full screen</button>
+							</div>
+						</div>
+						<div class="jp-details">
+							<div class="jp-title" aria-label="title">&nbsp;</div>
+						</div>
+					</div>
+				</div>
+				<div class="jp-playlist">
+					<ul>
+						<!-- The method Playlist.displayPlaylist() uses this unordered list -->
+						<li>&nbsp;</li>
+					</ul>
+				</div>
+				<div class="jp-no-solution">
+					<span>Update Required</span>
+					To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
+				</div>
+			</div>
+		</div>
 	</div>
 
 <div class="bg-site">
 	<div class="container">
 		<div class="two-thirds column module">
 			<h3>New Tracks</h3>
-
-      <div class="module-audio">
-        <div id="player1"></div>
-        <ul id="playlist1">
-          <li data-src="audio/thedrop.mp3"><img src="images/projects/ig-souleaterr.jpg">
-          <h5>Title</h5>
-          <p>Date</p></li>
-          <li data-src="audio/thedrop.mp3"><img src="images/projects/ig-souleaterr.jpg">
-          <h5>Title</h5>
-          <p>Date</p></li>
-          <li data-src="audio/thedrop.mp3"><img src="images/projects/ig-souleaterr.jpg">
-          <h5>Title</h5>
-          <p>Date</p></li>
-        </ul>
-      </div>
 	
 		</div>
 		       
@@ -83,6 +116,8 @@
 </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.jplayer.js"></script>
+<script type="text/javascript" src="js/jplayer.playlist.js"></script>
 <script src="js/scripts.js"></script>
 
 </body>
