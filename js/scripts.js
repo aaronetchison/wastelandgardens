@@ -1,24 +1,28 @@
 jQuery(document).ready(function($) {
 
 /* Menu */
-  $('#nav-wrap').prepend('<div id="menu-icon"><h2 class="button">Menu</h2></div>');
+  $('#nav-wrap').prepend('<button id="menu-icon"><span class="menu-bar"></span><span class="menu-bar"></span><span class="menu-bar"></span></button>');
   
   $("#menu-icon").on("click", function(){
       $("#nav-menu").slideToggle();
       $(this).toggleClass("active");
   });
 
+
+
+
+
 /* Audio Player */
   var audio    = new Audio();
     playlist = $('#playlist1');
     player = $('#player1');
 
-               playlist.on('click', 'li', function() {
-                  playlist.find('.current').removeClass('current');
-                  $(this).addClass('current');
-                  audio.src = $(this).data('src');
-                  audio.play();
-               });
+  playlist.on('click', 'li', function() {
+    playlist.find('.current').removeClass('current');
+    $(this).addClass('current');
+    audio.src = $(this).data('src');
+    audio.play();
+  });
        
   audio.controls = true;
   player.append(audio);
@@ -27,12 +31,12 @@ jQuery(document).ready(function($) {
     playlist2 = $('#playlist2');
     player2 = $('#player2');
 
-               playlist2.on('click', 'li', function() {
-                  playlist2.find('.current').removeClass('current');
-                  $(this).addClass('current');
-                  audio2.src = $(this).data('src');
-                  audio2.play();
-               });
+  playlist2.on('click', 'li', function() {
+    playlist2.find('.current').removeClass('current');
+    $(this).addClass('current');
+    audio2.src = $(this).data('src');
+    audio2.play();
+  });
        
   audio2.controls = true;
   player2.append(audio2);
@@ -236,4 +240,13 @@ jQuery(document).ready(function($) {
     myPlaylist.option("shuffleTime", 2000);
   });
 
+
+
+/* Lightbox */
+
+  $('#gallery1 a').lightBox();
+    
+  $('#gallery2 a').lightBox();
+
 });
+

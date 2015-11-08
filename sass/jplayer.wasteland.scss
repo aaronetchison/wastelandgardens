@@ -51,7 +51,7 @@ $dark-tan: #B0A490;
 	font-size:16px;
 	font-family:'Arimo', Arial, sans-serif;
 	line-height:1.6;
-	color: $dark-tan;
+	color: $light-gray;
 	border:none;
 	background: linear-gradient(to top, rgba(176,164,144,0), rgba(176,164,144,.5) );
 }
@@ -62,7 +62,8 @@ $dark-tan: #B0A490;
 	width:182px;
 }
 .jp-video-270p {
-	max-width:960px;
+	max-width:1260px;
+	border-raidus: 4px;
 }
 .jp-video-360p {
 	width:640px;
@@ -176,16 +177,16 @@ $dark-tan: #B0A490;
 }
 
 .jp-play {
-	background: url("../images/jplayer.blue.monday.jpg") 0 0 no-repeat;
+	background: url("../images/jplayer.wasteland.png") 0 0 no-repeat;
 }
 .jp-play:focus {
-	background: url("../images/jplayer.blue.monday.jpg") -41px 0 no-repeat;
+	background: url("../images/jplayer.wasteland.png") -41px 0 no-repeat;
 }
 .jp-state-playing .jp-play {
-	background: url("../images/jplayer.blue.monday.jpg") 0 -42px no-repeat;
+	background: url("../images/jplayer.wasteland.png") 0 -42px no-repeat;
 }
 .jp-state-playing .jp-play:focus {
-	background: url("../images/jplayer.blue.monday.jpg") -41px -42px no-repeat;
+	background: url("../images/jplayer.wasteland.png") -41px -42px no-repeat;
 }
 
 .jp-stop, .jp-previous, .jp-next {
@@ -195,26 +196,26 @@ $dark-tan: #B0A490;
 }
 
 .jp-stop {
-	background: url("../images/jplayer.blue.monday.jpg") 0 -83px no-repeat;
+	background: url("../images/jplayer.wasteland.png") 0 -83px no-repeat;
 	margin-left:10px;
 }
 
 .jp-stop:focus {
-	background: url("../images/jplayer.blue.monday.jpg") -29px -83px no-repeat;
+	background: url("../images/jplayer.wasteland.png") -29px -83px no-repeat;
 }
 
 .jp-previous {
-	background: url("../images/jplayer.blue.monday.jpg") 0 -112px no-repeat;
+	background: url("../images/jplayer.wasteland.png") 0 -112px no-repeat;
 }
 .jp-previous:focus {
-	background: url("../images/jplayer.blue.monday.jpg") -29px -112px no-repeat;
+	background: url("../images/jplayer.wasteland.png") -29px -112px no-repeat;
 }
 
 .jp-next {
-	background: url("../images/jplayer.blue.monday.jpg") 0 -141px no-repeat;
+	background: url("../images/jplayer.wasteland.png") 0 -141px no-repeat;
 }
 .jp-next:focus {
-	background: url("../images/jplayer.blue.monday.jpg") -29px -141px no-repeat;
+	background: url("../images/jplayer.wasteland.png") -29px -141px no-repeat;
 }
 
 /* @end */
@@ -245,20 +246,20 @@ $dark-tan: #B0A490;
 	height:10px;
 }
 .jp-seek-bar {
-	background: url("../images/jplayer.blue.monday.jpg") 0 -202px repeat-x;
+	background: url("../images/jplayer.wasteland.png") 0 -202px repeat-x;
 	width:0px;
 	height:100%;
 	cursor: pointer;
 }
 .jp-play-bar {
-	background: url("../images/jplayer.blue.monday.jpg") 0 -218px repeat-x ;
+	background: url("../images/jplayer.wasteland.png") 0 -218px repeat-x ;
 	width:0px;
 	height:100%;
 }
 
 /* The seeking class is added/removed inside jPlayer */
 .jp-seeking-bg {
-	background: url("../images/jplayer.blue.monday.seeking.gif");
+	background: url("../images/jplayer.wasteland.seeking.gif");
 }
 
 /* @end */
@@ -302,28 +303,28 @@ $dark-tan: #B0A490;
 }
 
 .jp-mute {
-	background: url("../images/jplayer.blue.monday.jpg") 0 -170px no-repeat;
+	background: url("../images/jplayer.wasteland.png") 0 -170px no-repeat;
 }
 .jp-mute:focus {
-	background: url("../images/jplayer.blue.monday.jpg") -19px -170px no-repeat;
+	background: url("../images/jplayer.wasteland.png") -19px -170px no-repeat;
 }
 .jp-state-muted .jp-mute {
-	background: url("../images/jplayer.blue.monday.jpg") -60px -170px no-repeat;
+	background: url("../images/jplayer.wasteland.png") -60px -170px no-repeat;
 }
 .jp-state-muted .jp-mute:focus {
-	background: url("../images/jplayer.blue.monday.jpg") -79px -170px no-repeat;
+	background: url("../images/jplayer.wasteland.png") -79px -170px no-repeat;
 }
 .jp-volume-max {
-	background: url("../images/jplayer.blue.monday.jpg") 0 -186px no-repeat;
+	background: url("../images/jplayer.wasteland.png") 0 -186px no-repeat;
 }
 .jp-volume-max:focus {
-	background: url("../images/jplayer.blue.monday.jpg") -19px -186px no-repeat;
+	background: url("../images/jplayer.wasteland.png") -19px -186px no-repeat;
 }
 
 .jp-volume-bar {
 	position: absolute;
 	overflow:hidden;
-	background: url("../images/jplayer.blue.monday.jpg") 0 -250px repeat-x;
+	background: url("../images/jplayer.wasteland.png") 0 -250px repeat-x;
 	top:5px;
 	left:22px;
 	width:46px;
@@ -331,7 +332,7 @@ $dark-tan: #B0A490;
 	cursor: pointer;
 }
 .jp-volume-bar-value {
-	background: url("../images/jplayer.blue.monday.jpg") 0 -256px repeat-x;
+	background: url("../images/jplayer.wasteland.png") 0 -256px repeat-x;
 	width:0px;
 	height:5px;
 }
@@ -416,6 +417,7 @@ $dark-tan: #B0A490;
 .jp-playlist li {
 	padding:5px 0 4px 20px;
 	border-bottom:none;
+	border-radius: 4px;
 }
 .jp-playlist li div {
 	display:inline;
@@ -427,14 +429,17 @@ div.jp-type-playlist div.jp-playlist li:last-child {
 	padding:5px 0 5px 20px;
 	border-bottom:none;
 }
+
+div.jp-type-playlist div.jp-playlist li:hover {
+	background: linear-gradient(to top, rgba(176,164,144,0), rgba(176,164,144,.5) );
+}
+
 div.jp-type-playlist div.jp-playlist li.jp-playlist-current {
-	list-style-type:square;
-	list-style-position:inside;
-	padding-left:7px;
+	background: linear-gradient(to top, rgba(176,164,144,0), rgba(176,164,144,.5) );
 }
 div.jp-type-playlist div.jp-playlist a {
 	font-size: 16px;
-	color: $dark-tan;
+	color: $light-gray;
 	text-decoration: none;
 }
 div.jp-type-playlist div.jp-playlist a:hover {
@@ -565,53 +570,53 @@ span.jp-artist {
 }
 
 .jp-full-screen {
-	background: url("../images/jplayer.blue.monday.jpg") 0 -310px no-repeat;
+	background: url("../images/jplayer.wasteland.png") 0 -310px no-repeat;
 	margin-left: 20px;
 }
 
 .jp-full-screen:focus {
-	background: url("../images/jplayer.blue.monday.jpg") -30px -310px no-repeat;
+	background: url("../images/jplayer.wasteland.png") -30px -310px no-repeat;
 }
 
 .jp-state-full-screen .jp-full-screen {
-	background: url("../images/jplayer.blue.monday.jpg") -60px -310px no-repeat;
+	background: url("../images/jplayer.wasteland.png") -60px -310px no-repeat;
 }
 
 .jp-state-full-screen .jp-full-screen:focus {
-	background: url("../images/jplayer.blue.monday.jpg") -90px -310px no-repeat;
+	background: url("../images/jplayer.wasteland.png") -90px -310px no-repeat;
 }
 
 .jp-repeat {
-	background: url("../images/jplayer.blue.monday.jpg") 0 -290px no-repeat;
+	background: url("../images/jplayer.wasteland.png") 0 -290px no-repeat;
 }
 
 .jp-repeat:focus {
-	background: url("../images/jplayer.blue.monday.jpg") -30px -290px no-repeat;
+	background: url("../images/jplayer.wasteland.png") -30px -290px no-repeat;
 }
 
 .jp-state-looped .jp-repeat {
-	background: url("../images/jplayer.blue.monday.jpg") -60px -290px no-repeat;
+	background: url("../images/jplayer.wasteland.png") -60px -290px no-repeat;
 }
 
 .jp-state-looped .jp-repeat:focus {
-	background: url("../images/jplayer.blue.monday.jpg") -90px -290px no-repeat;
+	background: url("../images/jplayer.wasteland.png") -90px -290px no-repeat;
 }
 
 .jp-shuffle {
-	background: url("../images/jplayer.blue.monday.jpg") 0 -270px no-repeat;
+	background: url("../images/jplayer.wasteland.png") 0 -270px no-repeat;
 	margin-left: 5px;
 }
 
 .jp-shuffle:focus {
-	background: url("../images/jplayer.blue.monday.jpg") -30px -270px no-repeat;
+	background: url("../images/jplayer.wasteland.png") -30px -270px no-repeat;
 }
 
 .jp-state-shuffled .jp-shuffle {
-	background: url("../images/jplayer.blue.monday.jpg") -60px -270px no-repeat;
+	background: url("../images/jplayer.wasteland.png") -60px -270px no-repeat;
 }
 
 .jp-state-shuffled .jp-shuffle:focus {
-	background: url("../images/jplayer.blue.monday.jpg") -90px -270px no-repeat;
+	background: url("../images/jplayer.wasteland.png") -90px -270px no-repeat;
 }
 
 

@@ -73,39 +73,8 @@ body {
 	z-index: -1;
 }
 
-.bg-site {
-	position: relative;
-	width: 100%;
-	padding-bottom: 20px;
-}
-
-.hero {
-	height: 100vh;
-	padding: 5% 0;
-}
-
-.hero-copy + .bg-site {
-	padding: 20px 0;
-}
-
-.hero-copy {
-	text-align: center;
-
-	h2 {
-		color: $dark-tan;
-		animation: delayed-fade 1s ease-in 0s 1; 
-	}
-
-	h4 {
-		color: $dark-tan;
-		animation: delayed-fade 2s ease-in 0s 1; 
-	}
-}
-
-@keyframes delayed-fade {
-	0%   {opacity: 0;}
-	50%  {opacity: 0;}
-	100% {opacity: 1;}
+.column, .columns {
+	border-radius: 4px;
 }
 
 /* Main Global Header */
@@ -116,6 +85,7 @@ header {
 	min-height: 80px;
 	padding: 10px 20px;
 	background: linear-gradient(to top, rgba(176,164,144,0), rgba(176,164,144,.5) );
+	z-index: 998;
 
 	.logo {
 		float: left;
@@ -123,14 +93,14 @@ header {
 	}
 
 	h1 a{
-		color: $dark-tan;
+		color: $light-gray;
 		transition: all .5s ease;
 	}
 
 	h1 a:hover{
-		color: $light-gray;
-		border-top: 5px solid $dark-tan;
-		border-bottom: 5px solid $dark-tan;
+		color: $dark-tan;
+		border-top: 5px solid $light-gray;
+		border-bottom: 5px solid $light-gray;
 	}
 
 	nav {
@@ -150,17 +120,17 @@ nav ul li a {
 	margin-left: 10px;
 	font-family: 'Bowlby One SC', Geneva, sans-serif;
 	font-size: 1.5em;
-	color: $dark-tan;
+	color: $light-gray;
 	font-weight: bold;
 	border: none;
 	transition: all .5s ease;
 }
 
 nav ul li a:hover {
-	color: $light-gray;
+	color: $dark-tan;
 	text-decoration: none;
-	border-top: 5px solid $dark-tan;
-	border-bottom: 5px solid $dark-tan;
+	border-top: 5px solid $light-gray;
+	border-bottom: 5px solid $light-gray;
 }
 
 #menu-icon {
@@ -174,8 +144,13 @@ footer {
 	height: auto;
 	margin-top: 60px;
 	padding-top: 10px;
+	padding-bottom: 10px;
+	background: linear-gradient(to bottom, rgba(176,164,144,0), rgba(176,164,144,.5) );
+	z-index: 997;
+}
+
+.copyright {
 	text-align: center;
-	z-index: 1;
 }
 
 /* Type Styles */
@@ -248,14 +223,10 @@ p a:hover{
 	color: $rust;
 }
 
-ol, ul {
-	margin-left: 20px;
-}
-
 li {
 	font-family: 'Arimo', Arial, Helvetica, sans-serif;
 	font-size: 1em;
-	color: $dark-gray;
+	color: $dark-tan;
 	padding: 0;
 	margin: 0 0 10px 0;
 }
@@ -291,6 +262,7 @@ img {
 	margin-bottom: 10px;
 	padding: 10px;
 	background: linear-gradient(to top, rgba(176,164,144,0), rgba(176,164,144,.5) );
+	border-radius: 4px;
 }
 
 
@@ -329,81 +301,88 @@ img {
 
 
 /* Forms */
-.label1 {
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 18px;
-	color: #993300;
-	float:left;
-	text-align:left;
-	clear:left;
-	margin-right:10px;
+.label {
+	font-family: 'Bowlby One SC', Arial, Helvetica, sans-serif;
+	font-size: 2em;
+	color: $dark-tan;
 	font-weight:bold;
+}
+
+input {
+	min-height: 32px;
+}
+
+input, textarea {
+	display: block;
+	width: 100%;
+	font-family: 'Arimo', Arial, Helvetica, sans-serif;
+	font-size: 1.5em;
+	color: $dark-tan;
+	border: 2px solid $light-gray;
+}
+
+input:focus, textarea:focus {
+	border: 2px solid $dark-tan;
+}
+
+.submit-reset {
+	float: left;
 	width: 120px;
-}
-
-.label2 {
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 18px;
-	color: #993300;
-	float:left;
-	text-align:left;
-	clear:left;
-	margin-right:10px;
-	font-weight:bold;
-}
-
-.submitReset {
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 14px;
-	font-weight: bold;
-	color: #56C529;
 	height: 32px;
-	width: 120px;
-	background-image: url(../images/btnBgUp.png);
-	background-repeat: repeat-x;
-	border-top-style: none;
-	border-right-style: none;
-	border-bottom-style: none;
-	border-left-style: none;
-	background-color: #000;
+	margin-top: 20px;
+	margin-right: 20px;
+	font-family: 'Bowlby One SC', Arial, Helvetica, sans-serif;
+	font-size: 1em;
+	font-weight: bold;
+	color: $light-gray;
+	background: linear-gradient(to top, rgba(176,164,144,0), rgba(176,164,144,.5) ); 
+	border: 2px solid $light-gray;
+	border-radius: 4px; 
 }
 
-.inputFocus {
-	border: 2px solid #56C529;	
-}
-
-.noInput {
-	background-color: #000;
-	border: 2px solid #993300;
-}
-
-
-label.error {
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 14px;
-	font-style: italic;
-	color: #993300;
-	margin-left: 10px;
-}
-
-input.error {
-	color: #993300;
-	border: 2px solid #993300;
-}
-
-#success {
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 18px;
-	color: #993300;
-	text-align:left;
-	clear:left;
-	margin-right:10px;
-	font-weight:bold;
-	margin-bottom: 10px;
+.submit-reset:hover {
+	color: $dark-tan;
+	background: $light-gray; 
+	border: 2px solid $dark-tan;
+	border-radius: 4px;
 }
 
 
 
+/** Hero **/
+
+.hero {
+	padding: 10% 0;
+}
+
+.hero--home {
+	height: 100vh;
+}
+
+.hero-copy + .bg-site {
+	padding: 20px 0;
+}
+
+.hero-copy {
+	text-align: center;
+	margin-bottom: 40px;
+
+	h2 {
+		color: $dark-tan;
+		animation: delayed-fade .5s ease-in 0s 1; 
+	}
+
+	h4 {
+		color: $dark-tan;
+		animation: delayed-fade 1s ease-in 0s 1; 
+	}
+}
+
+@keyframes delayed-fade {
+	0%   {opacity: 0;}
+	50%  {opacity: 0;}
+	100% {opacity: 1;}
+}
 
 
 /**Gallery**/
@@ -422,7 +401,7 @@ input.error {
 	height: 0;
 	width: 100%;
 	padding: 0;
-	background-color: rgba(0,0,0,0.5);
+	background: linear-gradient(to top, rgba(176,164,144,0), rgba(176,164,144,1) );
 	transition: all 1s ease;
 }
 
@@ -442,6 +421,11 @@ input.error {
 	}
 }
 
+/* jPlayer */
+
+.jp-video {
+	animation: delayed-fade 1.5s ease-in 0s 1;
+}
 
 /* Audio Player */
 
@@ -505,7 +489,7 @@ input.error {
 
 /* Media Queries */
 
-@media all and (min-width: 480px) and (max-width: 767px) {
+@media all and (min-width: 0) and (max-width: 767px) {
 
 	header {
 		position: relative;
@@ -523,8 +507,8 @@ input.error {
 		}
 
 		h1 a:hover{
-			border-top: 2px solid $dark-tan;
-			border-bottom: 2px solid $dark-tan;
+			border-top: 2px solid $light-gray;
+			border-bottom: 2px solid $light-gray;
 		}
 
 		nav {
@@ -540,27 +524,33 @@ input.error {
 	}
 
 	#menu-icon, #menu-icon:visited {
-		width: auto;
 		margin: 0;
-		padding: 0;
+		padding: 4px;
 		cursor: pointer;
-		border: none;
 		display: block;
-	}
-	
-	#menu-icon h2 {
-		margin: 0;
-		padding: 0;
-		font-size: 1.5em;
-	}
-	#menu-icon:hover, #menu-icon:active {
-		color: $light-gray;
-		border-top: 2px solid $dark-tan;
-		border-bottom: 2px solid $dark-tan;
+		background-color: rgba(176,164,144,0);
+		border: 2px solid $light-gray;
+		border-radius: 4px;
+
+		.menu-bar, .menu-bar:visited {
+			display: block;
+			width: 24px;
+			height: 4px;
+			background-color: $light-gray;
+		}
+
+		.menu-bar + .menu-bar {
+			margin-top: 4px;
+		}	
 	}
 
-	#menu-icon h2:hover {
-		color: $light-gray;
+	#menu-icon:hover, #menu-icon:active {
+		background-color: $light-gray;
+		border: 2px solid $dark-tan;
+
+		.menu-bar {
+			background-color: $dark-tan;
+		}
 	}
 
 	#nav-menu {
@@ -568,93 +558,18 @@ input.error {
 		position: absolute;
 		top: 50px;
 		left: -20px;
-		z-index: 9999;
+		z-index: 999;
 		width: 100%;
 		padding: 8px 8px;
 		text-align: center;
-		background-color: $white;
-		background: url('../images/concrete_seamless.png');
-		background-repeat: repeat;
+		background: linear-gradient(to bottom, rgba(176,164,144,0), rgba(176,164,144,.5) );
 		border: none;
 		display: none;
 		line-height: 50px;
 	}
-}
 
-@media all and (min-width: 0px) and (max-width: 479px) {
-
-	header {
-		position: relative;
-		min-height: 50px;
-		margin: 0;
-		padding: 7px 10px;
-		
-		.logo {
-			margin-top: 0;
-		}		
-
-		h1 a{
-			font-size: .75em;
-			vertical-align: top;
-		}
-
-		h1 a:hover{
-			border-top: 2px solid $dark-tan;
-			border-bottom: 2px solid $dark-tan;
-		}
-
-		nav {
-			margin: 0;
-		}
-
-		nav ul li {
-			display: block;
-			padding-left: 0;
-			text-align: center;
-		}
-	}
-
-	#nav-wrap {
-	}
-
-	#menu-icon, #menu-icon:visited {
-		width: auto;
-		margin: 0;
-		padding: 0;
-		cursor: pointer;
-		border: none;
-		display: block;
-	}
-	
-	#menu-icon h2 {
-		margin: 0;
-		font-size: 1.5em;
-	}
-	#menu-icon:hover, #menu-icon:active {
-		color: $light-gray;
-		border-top: 2px solid $dark-tan;
-		border-bottom: 2px solid $dark-tan;
-	}
-
-	#menu-icon h2:hover {
-		color: $light-gray;
-	}
-
-	#nav-menu {
-		clear: both;
-		position: absolute;
-		top: 50px;
-		left: -20px;
-		z-index: 9999;
-		width: 100%;
-		padding: 8px 8px;
-		text-align: left;
-		background-color: $white;
-		background: url('../images/concrete_seamless.png');
-		background-repeat: repeat;
-		border: none;
-		display: none;
-		line-height: 50px;
+	.hero--home {
+		margin-bottom: 80px;
 	}
 }
 
