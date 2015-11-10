@@ -179,13 +179,16 @@ $dark-tan: #B0A490;
 .jp-play {
 	background: url("../images/jplayer.wasteland.png") 0 0 no-repeat;
 }
-.jp-play:focus {
+
+.jp-play:hover, .jp-play:focus {
 	background: url("../images/jplayer.wasteland.png") -41px 0 no-repeat;
 }
+
 .jp-state-playing .jp-play {
 	background: url("../images/jplayer.wasteland.png") 0 -42px no-repeat;
 }
-.jp-state-playing .jp-play:focus {
+
+.jp-state-playing .jp-play:hover, .jp-state-playing .jp-play:focus {
 	background: url("../images/jplayer.wasteland.png") -41px -42px no-repeat;
 }
 
@@ -200,21 +203,21 @@ $dark-tan: #B0A490;
 	margin-left:10px;
 }
 
-.jp-stop:focus {
+.jp-stop:hover, .jp-stop:focus {
 	background: url("../images/jplayer.wasteland.png") -29px -83px no-repeat;
 }
 
 .jp-previous {
 	background: url("../images/jplayer.wasteland.png") 0 -112px no-repeat;
 }
-.jp-previous:focus {
+.jp-previous:hover, .jp-previous:focus {
 	background: url("../images/jplayer.wasteland.png") -29px -112px no-repeat;
 }
 
 .jp-next {
 	background: url("../images/jplayer.wasteland.png") 0 -141px no-repeat;
 }
-.jp-next:focus {
+.jp-next:hover, .jp-next:focus {
 	background: url("../images/jplayer.wasteland.png") -29px -141px no-repeat;
 }
 
@@ -305,19 +308,19 @@ $dark-tan: #B0A490;
 .jp-mute {
 	background: url("../images/jplayer.wasteland.png") 0 -170px no-repeat;
 }
-.jp-mute:focus {
+.jp-mute:hover, .jp-mute:focus {
 	background: url("../images/jplayer.wasteland.png") -19px -170px no-repeat;
 }
 .jp-state-muted .jp-mute {
 	background: url("../images/jplayer.wasteland.png") -60px -170px no-repeat;
 }
-.jp-state-muted .jp-mute:focus {
+.jp-state-muted .jp-mute:hover, .jp-state-muted .jp-mute:focus {
 	background: url("../images/jplayer.wasteland.png") -79px -170px no-repeat;
 }
 .jp-volume-max {
 	background: url("../images/jplayer.wasteland.png") 0 -186px no-repeat;
 }
-.jp-volume-max:focus {
+.jp-volume-max:hover, .jp-volume-max:focus {
 	background: url("../images/jplayer.wasteland.png") -19px -186px no-repeat;
 }
 
