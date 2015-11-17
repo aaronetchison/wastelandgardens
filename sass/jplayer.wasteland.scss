@@ -53,7 +53,8 @@ $dark-tan: #B0A490;
 	line-height:1.6;
 	color: $light-gray;
 	border:none;
-	background: linear-gradient(to top, rgba(176,164,144,0), rgba(176,164,144,.5) );
+	background-color: rgba(176,164,144,.5);
+	border-radius: 4px;
 }
 .jp-audio {
 	width:420px;
@@ -157,7 +158,7 @@ $dark-tan: #B0A490;
 
 .jp-video .jp-type-playlist .jp-controls {
 	width: 134px;
-	margin-left: 172px;
+	margin-left: 140px;
 }
 .jp-video .jp-controls {
 	float: left;
@@ -284,7 +285,7 @@ $dark-tan: #B0A490;
 }
 .jp-video .jp-volume-controls {
 	top:12px;
-	left:50px;
+	left:40px;
 }
 
 .jp-volume-controls button {
@@ -549,13 +550,13 @@ span.jp-artist {
 	width:55px;
 	margin: 0;
 	position: absolute;
-	left: 325px;
+	left: 185px;
 	top: 50px;
 }
 
 .jp-video .jp-toggles {
 	position:absolute;
-	right:16px;
+	left:280px;
 	margin:0;
 	margin-top:10px;
 	width:100px;
@@ -648,3 +649,19 @@ span.jp-artist {
 }
 
 /* @end */
+
+@media all and (min-width: 0) and (max-width: 480px) {
+
+.jp-video .jp-type-playlist .jp-controls {
+	margin-left: 110px;
+}
+
+.jp-video .jp-volume-controls {
+	left:10px;
+}
+
+.jp-video .jp-toggles {
+	left:250px;
+}
+
+}
