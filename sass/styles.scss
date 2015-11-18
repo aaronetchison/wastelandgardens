@@ -31,7 +31,7 @@ $light-gray: #fbfbfb;
 $medium-gray: #606060;
 $dark-gray: #333333;
 $blue-gray: #3F6677;
-$dark-tan: #B0A490;
+$dark-tan: #87745D;
 
 /* General Styles */
 
@@ -80,11 +80,9 @@ body {
 /* Main Global Header */
 
 header {
-	position: fixed;
 	width: 100%;
 	min-height: 80px;
 	padding: 10px 20px;
-	background-color: rgba(176,164,144,.5);
 	z-index: 998;
 
 	.logo {
@@ -144,7 +142,6 @@ footer {
 	height: auto;
 	margin-top: 60px;
 	padding: 10px;
-	background-color: rgba(176,164,144,.5);
 	z-index: 997;
 }
 
@@ -300,9 +297,9 @@ li {
 }
 
 .byline {
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 11px;
-	color: #CCCCCC;
+	font-family: 'Arimo', Arial, Helvetica, sans-serif;
+	font-size: 1em;
+	color: $dark-tan;
 	padding: 0;
 	margin: 0 20px 10px 0;
 }
@@ -326,13 +323,24 @@ img {
 	vertical-align: bottom;
 }
 
+.news {
+	img {
+		margin-bottom: 10px;
+	}
+}
+
 .module {
 	margin-bottom: 10px;
 	padding: 10px;
-	background-color: rgba(176,164,144,.5);
 	border-radius: 4px;
 }
 
+.main-content {
+	width: 100%;
+	margin: 0;
+	padding: 20px 0 0 0;
+	background: url("../images/concrete_seamless.png") top left repeat;
+}
 
 .faqBox h2 {
 	margin-right: 10px;
@@ -392,12 +400,12 @@ img {
 /* Forms */
 
 .contact-form {
-	margin-top: 64px;
+	margin-top: 58px;
 }
 .label {
 	font-family: 'Bowlby One SC', Arial, Helvetica, sans-serif;
 	font-size: 1.5em;
-	color: $light-gray;
+	color: $dark-tan;
 	font-weight:bold;
 }
 
@@ -429,7 +437,7 @@ input:focus, textarea:focus {
 	font-size: 1em;
 	font-weight: bold;
 	color: $light-gray;
-	background: linear-gradient(to top, rgba(176,164,144,0), rgba(176,164,144,.5) ); 
+	background-color: $dark-tan; 
 	border: 2px solid $light-gray;
 	border-radius: 4px; 
 }
@@ -446,12 +454,9 @@ input:focus, textarea:focus {
 /** Hero **/
 
 .hero {
-	padding: 100px 0 20px 0;
+	padding: 200px 0;
 }
 
-.hero--home {
-
-}
 
 .hero-copy + .bg-site {
 	padding: 20px 0;
@@ -462,12 +467,12 @@ input:focus, textarea:focus {
 	margin-bottom: 40px;
 
 	h2 {
-		color: $dark-tan;
+		color: $light-gray;
 		animation: delayed-fade .5s ease-in 0s 1; 
 	}
 
 	h4 {
-		color: $dark-tan;
+		color: $light-gray;
 		animation: delayed-fade 1s ease-in 0s 1; 
 	}
 }
