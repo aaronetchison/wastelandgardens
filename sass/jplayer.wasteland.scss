@@ -24,7 +24,7 @@ $light-gray: #fbfbfb;
 $medium-gray: #606060;
 $dark-gray: #333333;
 $blue-gray: #3F6677;
-$dark-tan: #B0A490;
+$dark-tan: #87745D;
 
 .jplayer {
 	margin: 0 auto;
@@ -53,7 +53,7 @@ $dark-tan: #B0A490;
 	line-height:1.6;
 	color: $light-gray;
 	border:none;
-	background-color: rgba(176,164,144,.5);
+	background-color: rgba(135,116,93,.25);
 	border-radius: 4px;
 }
 .jp-audio {
@@ -106,7 +106,7 @@ $dark-tan: #B0A490;
 
 .jp-interface {
 	position: relative;
-	background: linear-gradient(to top, rgba(176,164,144,0), rgba(176,164,144,.5) );
+	background: linear-gradient(to top, rgba(135,116,93,0), rgba(135,116,93,.25) );
 	width:100%;
 }
 
@@ -396,7 +396,7 @@ $dark-tan: #B0A490;
 .jp-details,
 .jp-playlist {
 	width:100%;
-	background: linear-gradient(to top, rgba(176,164,144,0), rgba(176,164,144,.5) );
+	background: linear-gradient(to top, rgba(135,116,93,0), rgba(135,116,93,.25) );
 	border-top:none;
 }
 
@@ -435,11 +435,11 @@ div.jp-type-playlist div.jp-playlist li:last-child {
 }
 
 div.jp-type-playlist div.jp-playlist li:hover {
-	background: linear-gradient(to top, rgba(176,164,144,0), rgba(176,164,144,.5) );
+	background-color: rgba(176,164,144,.5);
 }
 
 div.jp-type-playlist div.jp-playlist li.jp-playlist-current {
-	background: linear-gradient(to top, rgba(176,164,144,0), rgba(176,164,144,.5) );
+	background-color: rgba(135,116,93,.5);
 }
 div.jp-type-playlist div.jp-playlist a {
 	font-size: 16px;
@@ -528,7 +528,7 @@ span.jp-artist {
 }
 
 .jp-jplayer {
-	background: linear-gradient(to top, rgba(176,164,144,0), rgba(176,164,144,.5) );
+	background: linear-gradient(to top, rgba(135,116,93,0), rgba(135,116,93,.5) );
 }
 
 
@@ -578,7 +578,7 @@ span.jp-artist {
 	margin-left: 20px;
 }
 
-.jp-full-screen:focus {
+.jp-full-screen:focus, .jp-full-screen:hover {
 	background: url("../images/jplayer.wasteland.png") -30px -310px no-repeat;
 }
 
@@ -594,16 +594,20 @@ span.jp-artist {
 	background: url("../images/jplayer.wasteland.png") 0 -290px no-repeat;
 }
 
-.jp-repeat:focus {
+.jp-repeat:focus, .jp-repeat:hover {
 	background: url("../images/jplayer.wasteland.png") -30px -290px no-repeat;
 }
 
 .jp-state-looped .jp-repeat {
-	background: url("../images/jplayer.wasteland.png") -60px -290px no-repeat;
+	background: url("../images/jplayer.wasteland.png") -30px -290px no-repeat;
 }
 
 .jp-state-looped .jp-repeat:focus {
-	background: url("../images/jplayer.wasteland.png") -90px -290px no-repeat;
+	background: url("../images/jplayer.wasteland.png") -30px -290px no-repeat;
+}
+
+.jp-state-looped .jp-repeat:hover {
+	background: url("../images/jplayer.wasteland.png") 0 -290px no-repeat;
 }
 
 .jp-shuffle {
@@ -611,16 +615,20 @@ span.jp-artist {
 	margin-left: 5px;
 }
 
-.jp-shuffle:focus {
+.jp-shuffle:focus, .jp-shuffle:hover {
 	background: url("../images/jplayer.wasteland.png") -30px -270px no-repeat;
 }
 
 .jp-state-shuffled .jp-shuffle {
-	background: url("../images/jplayer.wasteland.png") -60px -270px no-repeat;
+	background: url("../images/jplayer.wasteland.png") -30px -270px no-repeat;
 }
 
 .jp-state-shuffled .jp-shuffle:focus {
-	background: url("../images/jplayer.wasteland.png") -90px -270px no-repeat;
+	background: url("../images/jplayer.wasteland.png") -30px -270px no-repeat;
+}
+
+.jp-state-shuffled .jp-shuffle:hover {
+	background: url("../images/jplayer.wasteland.png") 0 -270px no-repeat;
 }
 
 
