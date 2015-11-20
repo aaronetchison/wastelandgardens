@@ -486,7 +486,7 @@ input:focus, textarea:focus {
 /** Hero **/
 
 .hero {
-	padding: 200px 0;
+	padding: 180px 0;
 }
 
 
@@ -542,6 +542,7 @@ input:focus, textarea:focus {
 }
 
 .gallery {
+	margin-top: 20px;
 
 	h3 {
 		color: $light-gray;
@@ -664,7 +665,7 @@ input:focus, textarea:focus {
 	}
 
 	.hero {
-		padding: 70px 0 20px 0;
+		padding: 70px 0 70px 0;
 	}
 
 	.hero--home {

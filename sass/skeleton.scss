@@ -23,8 +23,8 @@
 
     .container                                  { position: relative; max-width: 1280px; margin: 0 auto; padding: 0; }
     .container .column,
-    .container .columns                         { float: left; display: inline; margin-left: 1.04166666666667%; margin-right: 1.04166666666667%; margin-bottom: 20px; }
-    .row                                        { margin-bottom: 2.08333333333333%; }
+    .container .columns                         { float: left; display: inline; margin-left: .78125%; margin-right: .78125%; margin-bottom: 20px; }
+    .row                                        { margin-bottom: 1.5625%; }
 
     /* Nested Column Classes */
     .column.alpha, .columns.alpha               { margin-left: 0; }
@@ -32,25 +32,25 @@
 
     /* Base Grid */
     .container .one.column,
-    .container .one.columns                     { width: 4.16666666666667%;  }
-    .container .two.columns                     { width: 10.41666666666667%; }
-    .container .three.columns                   { width: 16.66666666666667%; }
-    .container .four.columns                    { width: 22.91666666666667%; }
+    .container .one.columns                     { width: 4.687%;  }
+    .container .two.columns                     { width: 10.937%; }
+    .container .three.columns                   { width: 17.187%; }
+    .container .four.columns                    { width: 23.437%; }
     .container.gallery .four.columns            { width: 25%;                }
-    .container .five.columns                    { width: 29.16666666666667%; }
-    .container .six.columns                     { width: 35.41666666666667%; }
-    .container .seven.columns                   { width: 41.66666666666667%; }
-    .container .eight.columns                   { width: 47.91666666666667%; }
-    .container .nine.columns                    { width: 54.16666666666667%; }
-    .container .ten.columns                     { width: 60.41666666666667%; }
-    .container .eleven.columns                  { width: 66.66666666666667%; }
-    .container .twelve.columns                  { width: 72.91666666666667%; }
-    .container .thirteen.columns                { width: 79.16666666666667%; }
-    .container .fourteen.columns                { width: 85.41666666666667%; }
-    .container .fifteen.columns                 { width: 91.66666666666667%; }
-    .container .sixteen.columns                 { width: 97.91666666666667%; }
+    .container .five.columns                    { width: 29.687%; }
+    .container .six.columns                     { width: 35.937%; }
+    .container .seven.columns                   { width: 42.187%; }
+    .container .eight.columns                   { width: 48.437%; }
+    .container .nine.columns                    { width: 54.687%; }
+    .container .ten.columns                     { width: 60.937%; }
+    .container .eleven.columns                  { width: 67.187%; }
+    .container .twelve.columns                  { width: 73.437%; }
+    .container .thirteen.columns                { width: 79.687%; }
+    .container .fourteen.columns                { width: 85.937%; }
+    .container .fifteen.columns                 { width: 92.187%; }
+    .container .sixteen.columns                 { width: 98.4375%; }
 
-    .container .one-third.column                { width: 31.25%;             }
+    .container .one-third.column                { width: 31.77%;             }
     .container.gallery .one-third.column        { width: 33.33333333333333%; }
     .container .two-thirds.column               { width: 64.58333333333333%; }
 
@@ -62,31 +62,31 @@
     @media only screen and (min-width: 768px) and (max-width: 959px) {
         .container                                  { width: 100%; }
         .container .column,
-        .container .columns                         { margin-left: 1.04166666666667%; margin-right: 1.04166666666667%; margin-bottom: 20px;  }
-        .column.alpha, .columns.alpha               { margin-left: 0; margin-right: 1.04166666666667%; }
-        .column.omega, .columns.omega               { margin-right: 0; margin-left: 1.04166666666667%; }
+        .container .columns                         { margin-left: .78125%; margin-right: .78125%; margin-bottom: 20px;  }
+        .column.alpha, .columns.alpha               { margin-left: 0; margin-right: .78125%; }
+        .column.omega, .columns.omega               { margin-right: 0; margin-left: .78125%; }
         .alpha.omega                                { margin-left: 0; margin-right: 0; }
 
     .container .one.column,
-    .container .one.columns                     { width: 4.16666666666667%;  }
-    .container .two.columns                     { width: 10.41666666666667%; }
-    .container .three.columns                   { width: 16.66666666666667%; }
-    .container .four.columns                    { width: 22.91666666666667%; }
+    .container .one.columns                     { width: 4.687%;  }
+    .container .two.columns                     { width: 10.937%; }
+    .container .three.columns                   { width: 17.187%; }
+    .container .four.columns                    { width: 23.437%; }
     .container.gallery .four.columns            { width: 25%;                }
-    .container .five.columns                    { width: 29.16666666666667%; }
-    .container .six.columns                     { width: 35.41666666666667%; }
-    .container .seven.columns                   { width: 41.66666666666667%; }
-    .container .eight.columns                   { width: 47.91666666666667%; }
-    .container .nine.columns                    { width: 54.16666666666667%; }
-    .container .ten.columns                     { width: 60.41666666666667%; }
-    .container .eleven.columns                  { width: 66.66666666666667%; }
-    .container .twelve.columns                  { width: 72.91666666666667%; }
-    .container .thirteen.columns                { width: 79.16666666666667%; }
-    .container .fourteen.columns                { width: 85.41666666666667%; }
-    .container .fifteen.columns                 { width: 91.66666666666667%; }
-    .container .sixteen.columns                 { width: 97.91666666666667%; }
+    .container .five.columns                    { width: 29.687%; }
+    .container .six.columns                     { width: 35.937%; }
+    .container .seven.columns                   { width: 42.187%; }
+    .container .eight.columns                   { width: 48.437%; }
+    .container .nine.columns                    { width: 54.687%; }
+    .container .ten.columns                     { width: 60.937%; }
+    .container .eleven.columns                  { width: 67.187%; }
+    .container .twelve.columns                  { width: 73.437%; }
+    .container .thirteen.columns                { width: 79.687%; }
+    .container .fourteen.columns                { width: 85.937%; }
+    .container .fifteen.columns                 { width: 92.187%; }
+    .container .sixteen.columns                 { width: 98.4375%; }
 
-    .container .one-third.column                { width: 31.25%; }
+    .container .one-third.column                { width: 31.77%;             }
     .container.gallery .one-third.column        { width: 33.33333333333333%; }
     .container .two-thirds.column               { width: 64.58333333333333%; }
 
@@ -100,7 +100,7 @@
     @media only screen and (min-width: 480px) and (max-width: 767px) {
         .container { width: 100%; }
         .container .columns,
-        .container .column { margin-left: 1.04166666666667%; margin-right: 1.04166666666667%; margin-bottom: 20px; }
+        .container .column { margin-left: .78125%; margin-right: .78125%; margin-bottom: 20px; }
 
         .container .one.column,
         .container .one.columns,
@@ -120,8 +120,9 @@
         .container .fifteen.columns,
         .container .sixteen.columns,
         .container .one-third.column,
-        .container .two-thirds.column,
-        .container.gallery .one-third.column  { width: 97.91666666666667%; }
+        .container .two-thirds.column  { width: 98.4375%; }
+
+        .container.gallery .one-third.column    { width: 50%;; }
     }
 
 
@@ -131,7 +132,7 @@
     @media only screen and (max-width: 480px) {
         .container { width: 100%; }
         .container .columns,
-        .container .column { margin-left: 1.04166666666667%; margin-right: 1.04166666666667%; margin-bottom: 20px; }
+        .container .column { margin-left: .78125%; margin-right: .78125%; margin-bottom: 20px; }
 
         .container .one.column,
         .container .one.columns,
@@ -153,7 +154,7 @@
         .container .sixteen.columns,
         .container .one-third.column,
         .container.gallery .one-third.column,
-        .container .two-thirds.column { width: 97.91666666666667%; }
+        .container .two-thirds.column { width: 98.4375%; }
     }
 
 
