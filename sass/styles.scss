@@ -87,14 +87,14 @@ header {
 
 	.logo-container {
 		float: left;
-		margin-top: 6px;
+		margin-top: 10px;
 	}
 
 	.logo {
 		float: left;
 		width: 32px;
 		height: 32px;
-		margin-top: 6px;
+		margin-top: 0;
 		margin-right: 6px;
 		background: url("../images/icons/logo-wastelandgardens.png") center center no-repeat;
 	}
@@ -167,11 +167,11 @@ footer {
 }
 
 .copyright {
-	float: left;
+	text-align: center;
 }
 
 .social-media-group {
-	float: right;
+
 }
 
 .social-media {
@@ -236,17 +236,17 @@ footer {
 
 h1 {
 	font-family: 'Bowlby One SC', Helvetica, sans-serif;
-	font-size: 2em;
+	font-size: 1.5em;
 	font-weight: bold;
 	color: $medium-gray;
 	padding: 0;
-	margin: 0 0 10px 0;
+	margin: 0;
 }
 
 h1 a{
 	color: $medium-gray;
 	padding: 0;
-	margin: 0 0 10px 0;
+	margin: 0;
 	text-decoration: none;
 }
 
@@ -258,7 +258,7 @@ h2 {
 	margin: 0;
 	padding: 0;
 	font-family: 'Bowlby One SC', Helvetica, sans-serif;
-	font-size: 6em;
+	font-size: 4em;
 	color: $dark-tan;
 }
 
@@ -302,12 +302,13 @@ p {
 	color: $light-gray;
 }
 
-p a{
+p a, p a:visited {
+	color: $light-gray;
 	text-decoration: underline;
 }
 
 p a:hover{
-	color: $rust;
+	color: $dark-tan;
 }
 
 li {
@@ -486,7 +487,7 @@ input:focus, textarea:focus {
 /** Hero **/
 
 .hero {
-	padding: 180px 0;
+	padding: 100px 0 220px 0;
 }
 
 
@@ -499,11 +500,14 @@ input:focus, textarea:focus {
 	margin-bottom: 40px;
 
 	h2 {
+		font-size: 4em;
+		line-height: 1em;
 		color: $light-gray;
 		animation: delayed-fade .5s ease-in 0s 1; 
 	}
 
 	h4 {
+		font-size: 2em;
 		color: $light-gray;
 		animation: delayed-fade 1s ease-in 0s 1; 
 	}
@@ -520,7 +524,6 @@ input:focus, textarea:focus {
 
 .container.gallery .one-third.column {
 	position: relative;
-	max-height: 270px; /*DELETE THIS AFTER PLACING CONTENT*/
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
@@ -598,7 +601,6 @@ input:focus, textarea:focus {
 		}		
 
 		h1 a{
-			font-size: .75em;
 			vertical-align: top;
 		}
 
@@ -664,14 +666,6 @@ input:focus, textarea:focus {
 		line-height: 50px;
 	}
 
-	.hero {
-		padding: 70px 0 70px 0;
-	}
-
-	.hero--home {
-		margin-bottom: 0;
-	}
-
 	.teaser {
 
 		h6 {
@@ -687,14 +681,29 @@ input:focus, textarea:focus {
 	}
 }
 
+@media all and (min-width: 481px) and (max-width: 767px) {
+	.hero {
+		padding: 70px 0 70px 0;
+	}
+
+	.hero-copy {
+		margin-bottom: 40px;
+
+		h2 {
+			font-size: 3em;
+		}
+
+		h4 {
+			font-size: 1.5em;
+		}
+	}
+
+
+}
 
 
 @media all and (min-width: 0) and (max-width: 480px) {
 	header {
-
-		.logo {
-			margin-top: 2px;
-		}
 
 		h1 {
 			display: none;
@@ -703,6 +712,22 @@ input:focus, textarea:focus {
 		nav ul li {
 			display: block;
 			padding: 0 2px;
+		}
+	}
+
+	.hero {
+		padding: 70px 0 70px 0;
+	}
+
+	.hero-copy {
+		margin-bottom: 40px;
+
+		h2 {
+ 			font-size: 2em;
+		}
+
+		h4 {
+			font-size: 1.2em;
 		}
 	}
 
