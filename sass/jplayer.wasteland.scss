@@ -106,7 +106,6 @@ $dark-tan: #87745D;
 
 .jp-interface {
 	position: relative;
-	background: linear-gradient(to top, rgba(135,116,93,0), rgba(135,116,93,.25) );
 	width:100%;
 }
 
@@ -396,7 +395,6 @@ $dark-tan: #87745D;
 .jp-details,
 .jp-playlist {
 	width:100%;
-	background: linear-gradient(to top, rgba(135,116,93,0), rgba(135,116,93,.25) );
 	border-top:none;
 }
 
@@ -435,11 +433,11 @@ div.jp-type-playlist div.jp-playlist li:last-child {
 }
 
 div.jp-type-playlist div.jp-playlist li:hover {
-	background-color: rgba(176,164,144,.5);
+	background-color: rgba(135,116,93,.25);
 }
 
 div.jp-type-playlist div.jp-playlist li.jp-playlist-current {
-	background-color: rgba(135,116,93,.5);
+	background-color: rgba(135,116,93,.25);
 }
 div.jp-type-playlist div.jp-playlist a {
 	font-size: 16px;
