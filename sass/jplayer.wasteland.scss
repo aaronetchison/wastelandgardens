@@ -63,7 +63,7 @@ $dark-tan: #87745D;
 	width:182px;
 }
 .jp-video-270p {
-	max-width:1260px;
+	max-width: 1280px;
 	border-raidus: 4px;
 }
 .jp-video-360p {
@@ -180,7 +180,7 @@ $dark-tan: #87745D;
 	background: url("../images/jplayer.wasteland.png") 0 0 no-repeat;
 }
 
-.jp-play:hover, .jp-play:focus {
+.jp-play:hover {
 	background: url("../images/jplayer.wasteland.png") -41px 0 no-repeat;
 }
 
@@ -188,7 +188,7 @@ $dark-tan: #87745D;
 	background: url("../images/jplayer.wasteland.png") 0 -42px no-repeat;
 }
 
-.jp-state-playing .jp-play:hover, .jp-state-playing .jp-play:focus {
+.jp-state-playing .jp-play:hover {
 	background: url("../images/jplayer.wasteland.png") -41px -42px no-repeat;
 }
 
@@ -203,21 +203,21 @@ $dark-tan: #87745D;
 	margin-left:10px;
 }
 
-.jp-stop:hover, .jp-stop:focus {
+.jp-stop:hover {
 	background: url("../images/jplayer.wasteland.png") -29px -83px no-repeat;
 }
 
 .jp-previous {
 	background: url("../images/jplayer.wasteland.png") 0 -112px no-repeat;
 }
-.jp-previous:hover, .jp-previous:focus {
+.jp-previous:hover {
 	background: url("../images/jplayer.wasteland.png") -29px -112px no-repeat;
 }
 
 .jp-next {
 	background: url("../images/jplayer.wasteland.png") 0 -141px no-repeat;
 }
-.jp-next:hover, .jp-next:focus {
+.jp-next:hover{
 	background: url("../images/jplayer.wasteland.png") -29px -141px no-repeat;
 }
 
@@ -308,19 +308,19 @@ $dark-tan: #87745D;
 .jp-mute {
 	background: url("../images/jplayer.wasteland.png") 0 -170px no-repeat;
 }
-.jp-mute:hover, .jp-mute:focus {
+.jp-mute:hover {
 	background: url("../images/jplayer.wasteland.png") -19px -170px no-repeat;
 }
 .jp-state-muted .jp-mute {
 	background: url("../images/jplayer.wasteland.png") -60px -170px no-repeat;
 }
-.jp-state-muted .jp-mute:hover, .jp-state-muted .jp-mute:focus {
+.jp-state-muted .jp-mute:hover {
 	background: url("../images/jplayer.wasteland.png") -79px -170px no-repeat;
 }
 .jp-volume-max {
 	background: url("../images/jplayer.wasteland.png") 0 -186px no-repeat;
 }
-.jp-volume-max:hover, .jp-volume-max:focus {
+.jp-volume-max:hover {
 	background: url("../images/jplayer.wasteland.png") -19px -186px no-repeat;
 }
 
