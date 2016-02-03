@@ -58,6 +58,7 @@ body {
 	padding: 0;
 	margin: 0 auto;
 	font-size: 16px;
+	background: url("../images/concrete_seamless.png") top left repeat;
 }
 
 .bg-home {
@@ -352,6 +353,24 @@ a:hover {
 	color: $light-gray;
 }
 
+.submit {
+	padding: 10px 0;
+	font-family: 'Bowlby One SC', Arial, Helvetica, sans-serif;
+	font-size: 1.2em;
+	color: $light-gray;
+	background-color: rgba(135,116,93,.25); 
+	border: 2px solid $dark-tan;
+	border-radius: 4px;
+	transition: all .2s ease; 
+}
+
+.submit:hover {
+	color: $dark-tan;
+	background: rgba(135,116,93,0); 
+	border: 2px solid $light-gray;
+	border-radius: 4px;
+}
+
 
 /**Page Styles**/
 
@@ -490,21 +509,6 @@ img {
 	button {
 		width: 100%;
 		margin-top: 20px;
-		padding: 10px 0;
-		font-family: 'Bowlby One SC', Arial, Helvetica, sans-serif;
-		font-size: 1.2em;
-		color: $light-gray;
-		background-color: rgba(135,116,93,.25); 
-		border: 2px solid $dark-tan;
-		border-radius: 4px;
-		transition: all .2s ease; 
-	}
-
-	button:hover {
-		color: $dark-tan;
-		background: rgba(135,116,93,0); 
-		border: 2px solid $light-gray;
-		border-radius: 4px;
 	}
 }
 
