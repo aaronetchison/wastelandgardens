@@ -291,7 +291,7 @@ h5 {
 	margin: 0;
 	padding: 0;
 	font-family: 'Bowlby One SC', Helvetica, sans-serif;
-	font-size: 2em;
+	font-size: 1.5em;
 	color: $dark-tan;
 }
 
@@ -353,7 +353,7 @@ a:hover {
 	color: $light-gray;
 }
 
-.submit {
+.button {
 	padding: 10px 0;
 	font-family: 'Bowlby One SC', Arial, Helvetica, sans-serif;
 	font-size: 1.2em;
@@ -364,11 +364,16 @@ a:hover {
 	transition: all .2s ease; 
 }
 
-.submit:hover {
+.button:hover {
 	color: $dark-tan;
 	background: rgba(135,116,93,0); 
 	border: 2px solid $light-gray;
 	border-radius: 4px;
+}
+
+.button img {
+	height: 100%;
+	width: auto;
 }
 
 
@@ -591,6 +596,47 @@ img {
 	display: none;
 }
 
+.jp-playlist {
+	margin-bottom: 2em;
+}
+
+/* Buy Album Section */
+
+.album-info {
+	padding: 1.2em;
+	background-color: rgba(135,116,93,.25);
+
+	.album-cover {
+		float: left;
+		width: 180px;
+		height: auto;
+		min-width: 116px;
+		margin-right: 1.2em;
+		margin-bottom: 1.2em;
+	}
+
+	.album-details {
+		margin-bottom: 1.2em;
+	}
+
+	.album-buy-buttons {
+	}
+
+	.button {
+		clear: both;
+		display: block;
+		margin-bottom: 1.2em;
+		padding: 10px 1.2em;
+	}
+
+	.icon-buy {
+		display: block;
+		width: 96px;
+		margin: 0 auto;
+	}
+
+}
+
 
 /**Cycle Slideshow**/
 
@@ -774,6 +820,13 @@ img {
 			width: 100%;
 			height: auto;
 			margin-right: 0;
+		}
+	}
+	.album-info {
+		.album-cover {
+			float: none;
+			width: 100%;
+			height: auto;
 		}
 	}
 

@@ -48,8 +48,8 @@ $dark-tan: #87745D;
 .jp-audio-stream,
 .jp-video {
 	margin: 0 auto;
-	font-size:16px;
-	font-family:'Arimo', Arial, sans-serif;
+	font-size: 1.2em;
+	font-family: 'Arimo', Arial, sans-serif;
 	line-height:1.6;
 	color: $light-gray;
 	border:none;
@@ -440,7 +440,7 @@ div.jp-type-playlist div.jp-playlist li.jp-playlist-current {
 	background-color: rgba(135,116,93,.25);
 }
 div.jp-type-playlist div.jp-playlist a {
-	font-size: 16px;
+	font-size: 1.2em;
 	color: $light-gray;
 	text-decoration: none;
 }

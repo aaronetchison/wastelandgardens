@@ -40,55 +40,68 @@
 		<div class="ten columns module">
 			<h3>Recent Album</h3>
 			<img src="images/wasteland-lg.jpg" alt="Wasteland Gardens Latest Album">
-		<div id="jp_container_N" class="jp-video jp-video-270p" role="application" aria-label="media player">
-			<div class="jp-type-playlist">
-				<div id="jquery_jplayer_N" class="jp-jplayer"></div>
-				<div class="jp-gui">
-					<div class="jp-video-play"></div>
-					<div class="jp-interface">
-						<div class="jp-progress">
-							<div class="jp-seek-bar">
-								<div class="jp-play-bar"></div>
-							</div>
-						</div>
-						<div class="jp-current-time" role="timer" aria-label="time">&nbsp;</div>
-						<div class="jp-duration" role="timer" aria-label="duration">&nbsp;</div>
-						<div class="jp-controls-holder">
-							<div class="jp-controls">
-								<button class="jp-previous" role="button" tabindex="0">previous</button>
-								<button class="jp-play" role="button" tabindex="0">play</button>
-								<button class="jp-next" role="button" tabindex="0">next</button>
-								<button class="jp-stop" role="button" tabindex="0">stop</button>
-							</div>
-							<div class="jp-volume-controls">
-								<button class="jp-mute" role="button" tabindex="0">mute</button>
-								<button class="jp-volume-max" role="button" tabindex="0">max volume</button>
-								<div class="jp-volume-bar">
-									<div class="jp-volume-bar-value"></div>
+			<div id="jp_container_N" class="jp-video jp-video-270p" role="application" aria-label="media player">
+				<div class="jp-type-playlist">
+					<div id="jquery_jplayer_N" class="jp-jplayer"></div>
+					<div class="jp-gui">
+						<div class="jp-video-play"></div>
+						<div class="jp-interface">
+							<div class="jp-progress">
+								<div class="jp-seek-bar">
+									<div class="jp-play-bar"></div>
 								</div>
 							</div>
-							<div class="jp-toggles">
-								<button class="jp-repeat" role="button" tabindex="0">repeat</button>
-								<button class="jp-shuffle" role="button" tabindex="0">shuffle</button>
+							<div class="jp-current-time" role="timer" aria-label="time">&nbsp;</div>
+							<div class="jp-duration" role="timer" aria-label="duration">&nbsp;</div>
+							<div class="jp-controls-holder">
+								<div class="jp-controls">
+									<button class="jp-previous" role="button" tabindex="0">previous</button>
+									<button class="jp-play" role="button" tabindex="0">play</button>
+									<button class="jp-next" role="button" tabindex="0">next</button>
+									<button class="jp-stop" role="button" tabindex="0">stop</button>
+								</div>
+								<div class="jp-volume-controls">
+									<button class="jp-mute" role="button" tabindex="0">mute</button>
+									<button class="jp-volume-max" role="button" tabindex="0">max volume</button>
+									<div class="jp-volume-bar">
+										<div class="jp-volume-bar-value"></div>
+									</div>
+								</div>
+								<div class="jp-toggles">
+									<button class="jp-repeat" role="button" tabindex="0">repeat</button>
+									<button class="jp-shuffle" role="button" tabindex="0">shuffle</button>
+								</div>
+							</div>
+							<div class="jp-details">
+								<div class="jp-title" aria-label="title">&nbsp;</div>
 							</div>
 						</div>
-						<div class="jp-details">
-							<div class="jp-title" aria-label="title">&nbsp;</div>
-						</div>
+					</div>
+					<div class="jp-playlist">
+						<ul>
+							<!-- The method Playlist.displayPlaylist() uses this unordered list -->
+							<li>&nbsp;</li>
+						</ul>
+					</div>
+					<div class="jp-no-solution">
+						<span>Update Required</span>
+						To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
 					</div>
 				</div>
-				<div class="jp-playlist">
-					<ul>
-						<!-- The method Playlist.displayPlaylist() uses this unordered list -->
-						<li>&nbsp;</li>
-					</ul>
+			</div>
+			<div class="album-info">
+				<img class="album-cover" src="images/wasteland-album-cover.jpg" alt="Wasteland Gardens Album Cover">
+				<div class="album-details">
+					<h5>Wasteland Gardens</h5>
+					<p>Dec. 20, 2015</p>
+					<p>14 Tracks</p>
+					<p>55:37</p>
 				</div>
-				<div class="jp-no-solution">
-					<span>Update Required</span>
-					To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
+				<div class="album-buy-buttons">
+					<a href="#" class="button"><img class="icon-buy" src="images/icons/amazon.png" alt="Buy on Amazon Icon"></a>
+					<a href="#" class="button"><img class="icon-buy" src="images/icons/apple.png" alt="Buy on Apple Music Icon"></a>
 				</div>
 			</div>
-		</div>
 		</div>
 		       
 		<aside class="six columns module">
@@ -171,7 +184,7 @@
 	            <textarea name="comments" rows="4" id="comments" class="required"></textarea>
 		        </div>
 		        <div>
-	            <button type="submit" name="submit" id="submit" class="submit">Submit</button>
+	            <button type="submit" name="submit" id="submit" class="submit button">Submit</button>
 		        </div>
 		    </form>
 			</div>			
