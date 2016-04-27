@@ -10,6 +10,12 @@
 <link href= "https://fonts.googleapis.com/css?family=Bowlby+One+SC|Arimo:400,400italic,700" rel="stylesheet" type="text/css">
 <link rel="stylesheet" href="stylesheets/global.css"><!-- load main CSS  -->
 
+<script>
+  // Picture element HTML5 shiv
+  document.createElement( "picture" );
+</script>
+<script src="js/picturefill.min.js" async></script>
+
 </head>
 <body>
 <div class="bg-home">
@@ -107,7 +113,10 @@
 		<aside class="six columns module">
 			<h3>Tour Dates</h3>
       <div class="teaser">
-        <img src="images/rave2-md.jpg" alt="Decadence Event">
+        <img src="images/rave2-md.jpg" alt="Decadence Event"
+					srcset="images/rave2-sm.jpg 120w, images/rave2-md.jpg 480w"
+					sizes="(max-width: 480px) 100vw, (max-width: 768px) 33vw, 480px"
+        >
         <h6>Decadence</h6>
         <p>Dec. 31, 2015</p>
         <p>Denver, CO</p>
@@ -115,7 +124,10 @@
       </div>
 
       <div class="teaser">
-        <img src="images/discoball-md.jpg" alt="Insomniac Event">
+        <img src="images/discoball-md.jpg" alt="Insomniac Event"
+					srcset="images/discoball-sm.jpg 120w, images/discoball-md.jpg 480w"
+					sizes="(max-width: 480px) 100vw, (max-width: 768px) 33vw, 480px"
+        >
         <h6>Insomniac Countdown</h6>
         <p>Dec. 31, 2015</p>
         <p>Dallas, TX</p>
@@ -123,7 +135,10 @@
       </div>
       
       <div class="teaser">
-        <img src="images/dj-md.jpg" alt="Wonderland Event">
+        <img src="images/dj-md.jpg" alt="Wonderland Event"
+					srcset="images/dj-sm.jpg 120w, images/dj-md.jpg 480w"
+					sizes="(max-width: 480px) 100vw, (max-width: 768px) 33vw, 480px"
+        >
         <h6>Beyond Wonderland</h6>
         <p>Mar. 18, 2016</p>
         <p>San Bernadino, CA</p>

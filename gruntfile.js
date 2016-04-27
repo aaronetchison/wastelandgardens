@@ -10,6 +10,7 @@ module.exports = function(grunt) {
 		  	style: 'compressed'
 		  },
 		  files: {
+		  	'stylesheets/custom-theme/jquery-ui-1.8.16.custom.css': 'sass/jquery-ui-1.8.16.custom.scss',
 				'stylesheets/jquery.lightbox-0.5.css': 'sass/jquery.lightbox-0.5.scss',
 				'stylesheets/skeleton.css': 'sass/skeleton.scss',
 				'stylesheets/global.css': 'sass/styles.scss'

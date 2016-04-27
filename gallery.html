@@ -9,6 +9,12 @@
 <link href= "https://fonts.googleapis.com/css?family=Bowlby+One+SC|Arimo:400,400italic,700" rel="stylesheet" type="text/css">
 <link rel="stylesheet" href="stylesheets/global.css"><!-- load main CSS  -->
 
+<script>
+  // Picture element HTML5 shiv
+  document.createElement( "picture" );
+</script>
+<script src="js/picturefill.min.js" async></script>
+
 </head>
 <body>
 <div class="bg-home">
@@ -37,84 +43,120 @@
   <div class="logo"></div>
   <div class="container gallery">
     <div class="one-third column">
-      <img src="images/rave-lg.jpg" alt="Badlands Event">
+      <img src="images/rave-md.jpg" alt="Badlands Event"
+          srcset="images/rave-md.jpg 480w, images/rave-lg.jpg 760w"
+          sizes="(max-width: 480px) 100vw, (max-width: 768px) 100vw, 480px"
+        >
       <div class="gallery-copy">
         <h3>Badlands</h3>
         <p>The moment when the beat drops</p>
       </div>
     </div>
     <div class="one-third column">
-      <img src="images/rave2-lg.jpg" alt="Decadence Event">
+      <img src="images/rave2-lg.jpg" alt="Decadence Event"
+          srcset="images/rave2-md.jpg 480w, images/rave2-lg.jpg 760w"
+          sizes="(max-width: 480px) 100vw, (max-width: 768px) 100vw, 480px"
+        >
       <div class="gallery-copy">
         <h3>Decadence</h3>
         <p>Intense light show at Decadence</p>
       </div>
     </div>
     <div class="one-third column">
-      <img src="images/dancer-lg.jpg" alt="Euphoria Event">
+      <img src="images/dancer-lg.jpg" alt="Euphoria Event"
+          srcset="images/dancer-md.jpg 480w, images/dancer-lg.jpg 760w"
+          sizes="(max-width: 480px) 100vw, (max-width: 768px) 100vw, 480px"
+        >
       <div class="gallery-copy">
         <h3>Euphoria</h3>
         <p>Breaking it down at Euphoria</p>
       </div>
     </div>
     <div class="one-third column">
-      <img src="images/concert-lg.jpg" alt="EDC Event">
+      <img src="images/concert-lg.jpg" alt="EDC Event"
+          srcset="images/concert-md.jpg 480w, images/concert-lg.jpg 760w"
+          sizes="(max-width: 480px) 100vw, (max-width: 768px) 100vw, 480px"
+        >
       <div class="gallery-copy">
         <h3>Electric Daisy</h3>
         <p>Intense light at the carnival</p>
       </div>
     </div>
       <div class="one-third column">
-      <img src="images/discoball-lg.jpg" alt="Insomniac Event">
+      <img src="images/discoball-lg.jpg" alt="Insomniac Event"
+          srcset="images/discoball-md.jpg 480w, images/discoball-lg.jpg 760w"
+          sizes="(max-width: 480px) 100vw, (max-width: 768px) 100vw, 480px"
+        >
       <div class="gallery-copy">
         <h3>Insomniac Countdown</h3>
         <p>Amazing disco ball at Insomniac</p>
       </div>
     </div>
     <div class="one-third column">
-      <img src="images/dj-lg.jpg" alt="Dj Setup at Wonderland">
+      <img src="images/dj-lg.jpg" alt="Dj Setup at Wonderland"
+          srcset="images/dj-md.jpg 480w, images/dj-lg.jpg 760w"
+          sizes="(max-width: 480px) 100vw, (max-width: 768px) 100vw, 480px"
+        >
       <div class="gallery-copy">
         <h3>Beyond Wonderland</h3>
         <p>Ready for the mix</p>
       </div>
     </div>
     <div class="one-third column">
-      <img src="images/beachparty-lg.jpg" alt="Sunrise in Ibiza at Party">
+      <img src="images/beachparty-lg.jpg" alt="Sunrise in Ibiza at Party"
+          srcset="images/beachparty-md.jpg 480w, images/beachparty-lg.jpg 760w"
+          sizes="(max-width: 480px) 100vw, (max-width: 768px) 100vw, 480px"
+        >
       <div class="gallery-copy">
         <h3>Good Morning</h3>
         <p>Bringing the new day in Ibiza</p>
       </div>
     </div>
     <div class="one-third column">
-      <img src="images/darkrave-lg.jpg" alt="Intense Moment at EDC">
+      <img src="images/darkrave-lg.jpg" alt="Intense Moment at EDC"
+          srcset="images/darkrave-md.jpg 480w, images/darkrave-lg.jpg 760w"
+          sizes="(max-width: 480px) 100vw, (max-width: 768px) 100vw, 480px"
+        >
       <div class="gallery-copy">
         <h3>Intensity</h3>
         <p>Creating a little tension</p>
       </div>
     </div>
     <div class="one-third column">
-      <img src="images/festivallove-lg.jpg" alt="Festival attendee showing some love">
+      <img src="images/festivallove-lg.jpg" alt="Festival attendee showing some love"
+          srcset="images/festivallove-md.jpg 480w, images/festivallove-lg.jpg 760w"
+          sizes="(max-width: 480px) 100vw, (max-width: 768px) 100vw, 480px"
+        >
       <div class="gallery-copy">
         <h3>Festival Love</h3>
         <p>Showing some love at the festival</p>
       </div>
     </div>
     <div class="one-third column">
-      <img src="images/lasershow-lg.jpg" alt="Intese laser show">
+      <img src="images/lasershow-lg.jpg" alt="Intese laser show"
+          srcset="images/lasershow-md.jpg 480w, images/lasershow-lg.jpg 760w"
+          sizes="(max-width: 480px) 100vw, (max-width: 768px) 100vw, 480px"
+        >
       <div class="gallery-copy">
         <h3>Seizure Warning</h3>
         <p>An intense laser show at Euphoria</p>
       </div>
     </div>
       <div class="one-third column">
-      <img src="images/discoparty-lg.jpg" alt="Disco party">
+      <img src="images/discoparty-lg.jpg" alt="Disco party"
+          srcset="images/discoparty-md.jpg 480w, images/discoparty-lg.jpg 760w"
+          sizes="(max-width: 480px) 100vw, (max-width: 768px) 100vw, 480px"
+        >
       <div class="gallery-copy">
         <h3>Party at the Disco</h3>
         <p>Bringing back that 70's vibe</p>
       </div>
     </div>
     <div class="one-third column">
-      <img src="images/partyhard-lg.jpg" alt="Green smoke at event">
+      <img src="images/partyhard-lg.jpg" alt="Green smoke at event"
+          srcset="images/partyhard-md.jpg 480w, images/partyhard-lg.jpg 760w"
+          sizes="(max-width: 480px) 100vw, (max-width: 768px) 100vw, 480px"
+        >
       <div class="gallery-copy">
         <h3>The Arrival</h3>
         <p>They're here...</p>
